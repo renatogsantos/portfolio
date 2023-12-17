@@ -107,7 +107,6 @@ export default function MainNavbar() {
               isIconOnly
               variant="bordered"
               aria-label="Agendar Video Chamada"
-              title="Agendar Video Chamada"
               as={Link}
               href="https://calendar.app.google/7ZiptucnE3S7YABH7"
             >
