@@ -11,9 +11,10 @@ import {
   NavbarMenu,
   NavbarMenuItem,
   Avatar,
+  Tooltip,
 } from "@nextui-org/react";
 import MainSwitch from "./Switch";
-import { LinkedinLogo } from "@phosphor-icons/react";
+import { CalendarPlus, LinkedinLogo } from "@phosphor-icons/react";
 
 export default function MainNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -51,7 +52,9 @@ export default function MainNavbar() {
               src="https://github.com/renatogsantos.png"
             />
             <div className="flex flex-col gap-1">
-              <span className="text-small font-bold m-0 p-0 leading-none">Renato G Santos</span>
+              <span className="text-small font-bold m-0 p-0 leading-none">
+                Renato G Santos
+              </span>
               <Link
                 href="https://www.linkedin.com/in/renato-g-santos/"
                 className="text-[12px] font-medium m-0 p-0 leading-none text-main-700 dark:text-white"
@@ -74,15 +77,6 @@ export default function MainNavbar() {
         </NavbarItem>
         <NavbarItem>
           <Link
-            href="https://calendar.app.google/7ZiptucnE3S7YABH7"
-            target="_blank"
-            className="text-main-700 dark:text-white font-medium hover:text-main-100"
-          >
-            Agendamento
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link
             href="#"
             className="text-main-700 dark:text-white font-medium hover:text-main-100"
           >
@@ -99,9 +93,27 @@ export default function MainNavbar() {
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarContent justify="end">
+      <NavbarContent justify="end" className="gap-2">
         <NavbarItem>
           <MainSwitch />
+        </NavbarItem>
+        <NavbarItem>
+          <Tooltip
+            placement="bottom"
+            showArrow={true}
+            content="Agendar Video Chamada"
+          >
+            <Button
+              isIconOnly
+              variant="bordered"
+              aria-label="Agendar Video Chamada"
+              title="Agendar Video Chamada"
+              as={Link}
+              href="https://calendar.app.google/7ZiptucnE3S7YABH7"
+            >
+              <CalendarPlus size={24} weight="duotone" />
+            </Button>
+          </Tooltip>
         </NavbarItem>
       </NavbarContent>
       <NavbarMenu>
