@@ -1,9 +1,8 @@
 body {
   background: url("/bg.svg");
-  background-size: contain;
+  background-size: 100%;
   background-position: top center;
 }
-
 
 .man-home {
   position: absolute;
@@ -15,7 +14,7 @@ body {
 
 .arrow-line-home {
   position: absolute;
-  height: 85%;
+  height: 75%;
   top: 50%;
   left: -30%;
   transform: translateY(-50%);

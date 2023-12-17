@@ -45,7 +45,6 @@ const config: any = {
       prefix: "nextui", // prefix for themes variables
       addCommonColors: false, // override common colors (e.g. "blue", "green", "pink").
       defaultTheme: "light", // default theme from the themes object
-      defaultExtendTheme: "light", // default theme to extend on custom themes
       layout: {}, // common layout tokens (applied to all themes)
       themes: {
         light: {
@@ -75,7 +74,7 @@ const config: any = {
             },
             secondary: {
               foreground: "#FFFFFF",
-              DEFAULT: "#3B445B",
+              DEFAULT: "#f5f5f5",
             },
           }, // dark theme colors
         },

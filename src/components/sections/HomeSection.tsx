@@ -1,18 +1,27 @@
 "use client";
-import { Code, PaintBrush, RocketLaunch } from "@phosphor-icons/react";
+import {
+  Code,
+  LinkedinLogo,
+  MouseSimple,
+  PaintBrush,
+  RocketLaunch,
+  TwitterLogo,
+  WhatsappLogo,
+} from "@phosphor-icons/react";
 import MainButton from "../Button";
+import { Link } from "@nextui-org/react";
 
 export default function HomeSection() {
   return (
     <>
       <div className="container mx-auto rounded-3xl dark:bg-slate-800 bg-white mt-12 shadow-lg grid lg:grid-cols-2">
-        <div className="flex flex-col gap-6 p-10 lg:p-24">
+        <div className="flex flex-col gap-6 p-10 lg:p-18 xl:p-24">
           <p className="text-main-700 dark:text-white text-1xl xl:text-2xl font-bold">
             Construindo o futuro
             <br /> através de design e tecnologia
           </p>
           <h1
-            className="text-4xl lg:text-6xl xl:text-8xl font-extrabold text-main-700 dark:text-white"
+            className="text-4xl md:text-4xl lg:text-4xl xl:text-8xl font-extrabold text-main-700 dark:text-white"
             defaultValue="Studio Digital"
           >
             Studio<span className="text-main-100">Digital</span>
@@ -20,7 +29,12 @@ export default function HomeSection() {
           <p className="text-main-700 dark:text-white text-2xl xl:text-3xl font-bold">
             Seu sucesso é nossa missão
           </p>
-          <MainButton title="Entre em contato" onClick={()=>{console.log("oi")}} />
+          <MainButton
+            title="Entre em contato"
+            onClick={() => {
+              console.log("oi");
+            }}
+          />
           <div className="flex items-center gap-4">
             <span className="flex items-center font-medium text-main-700 dark:text-white">
               <PaintBrush size={24} weight="duotone" />
@@ -49,6 +63,22 @@ export default function HomeSection() {
             alt="Homem gritando"
             className="man-home"
           />
+        </div>
+      </div>
+      <div className="container mx-auto p-4 hidden lg:flex justify-between">
+        <span className="text-main-700 dark:text-white font-medium">
+          Conheça mais sobre o StudioDigital
+        </span>
+        <div className="flex items-center gap-4">
+          <Link href="#" color="secondary">
+            <WhatsappLogo size={24} weight="duotone" />
+          </Link>
+          <Link href="#" color="secondary">
+            <LinkedinLogo size={24} weight="duotone" />
+          </Link>
+          <Link href="#" color="secondary">
+            <TwitterLogo size={24} weight="duotone" />
+          </Link>
         </div>
       </div>
     </>
