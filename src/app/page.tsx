@@ -21,9 +21,9 @@ export default function Home() {
             </p>
             <MainButton title="Entre em contato" />
             <div className="flex items-center gap-4">
-              <span className="font-medium text-main-700">Design</span>
-              <span className="font-medium text-main-700">Coding</span>
-              <span className="font-medium text-main-700">Business</span>
+              <span className="font-medium text-main-700 dark:text-white">Design</span>
+              <span className="font-medium text-main-700 dark:text-white">Coding</span>
+              <span className="font-medium text-main-700 dark:text-white">Business</span>
             </div>
           </div>
           <div className="relative hidden lg:flex">
