@@ -48,18 +48,18 @@ export default function MainNavbar() {
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="#">
-            Features
-          </Link>
-        </NavbarItem>
-        <NavbarItem isActive>
-          <Link href="#" aria-current="page">
-            Customers
+          <Link className="text-main-700 dark:text-white font-medium hover:text-main-100" href="#">
+            Início
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
-            Integrations
+          <Link className="text-main-700 dark:text-white font-medium hover:text-main-100" href="#">
+            Sobre nós
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link className="text-main-700 dark:text-white font-medium hover:text-main-100" href="#">
+            Soluções
           </Link>
         </NavbarItem>
       </NavbarContent>
@@ -71,7 +71,7 @@ export default function MainNavbar() {
       </NavbarContent>
       <NavbarMenu>
         {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
+          <NavbarMenuItem key={`${item}`}>
             <Link
               color={
                 index === 2
