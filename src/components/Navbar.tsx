@@ -10,8 +10,10 @@ import {
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
+  Avatar,
 } from "@nextui-org/react";
 import MainSwitch from "./Switch";
+import { LinkedinLogo } from "@phosphor-icons/react";
 
 export default function MainNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -42,23 +44,56 @@ export default function MainNavbar() {
           className="sm:hidden"
         />
         <NavbarBrand>
-          <p className="font-bold text-inherit">Renato G Santos</p>
+          <div className="flex items-center gap-2">
+            <Avatar
+              isBordered
+              color="success"
+              src="https://github.com/renatogsantos.png"
+            />
+            <div className="flex flex-col gap-1">
+              <span className="text-small font-bold m-0 p-0 leading-none">Renato G Santos</span>
+              <Link
+                href="https://www.linkedin.com/in/renato-g-santos/"
+                className="text-[12px] font-medium m-0 p-0 leading-none text-main-700 dark:text-white"
+              >
+                <LinkedinLogo size={16} weight="duotone" /> Perfil Linkedin
+              </Link>
+            </div>
+          </div>
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link className="text-main-700 dark:text-white font-medium hover:text-main-100" href="#">
+          <Link
+            href="#"
+            className="text-main-700 dark:text-white font-medium hover:text-main-100"
+          >
             Início
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-main-700 dark:text-white font-medium hover:text-main-100" href="#">
+          <Link
+            href="https://calendar.app.google/7ZiptucnE3S7YABH7"
+            target="_blank"
+            className="text-main-700 dark:text-white font-medium hover:text-main-100"
+          >
+            Agendamento
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link
+            href="#"
+            className="text-main-700 dark:text-white font-medium hover:text-main-100"
+          >
             Sobre nós
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-main-700 dark:text-white font-medium hover:text-main-100" href="#">
+          <Link
+            href="#"
+            className="text-main-700 dark:text-white font-medium hover:text-main-100"
+          >
             Soluções
           </Link>
         </NavbarItem>
