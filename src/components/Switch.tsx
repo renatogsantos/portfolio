@@ -16,7 +16,7 @@ export default function MainSwitch() {
   return (
     <Switch
       defaultSelected
-      size="md"
+      size="lg"
       color="primary"
       startContent={<SunDim size={24} weight="duotone" />}
       endContent={<Moon size={24} weight="duotone" />}
