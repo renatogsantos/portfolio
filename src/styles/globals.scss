@@ -4,6 +4,13 @@ body {
   background-position: top center;
 }
 
+.bg-home {
+  background: url("/background-home.png"), #fff;
+  background-position: left bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .man-home {
   position: absolute;
   bottom: 0;
