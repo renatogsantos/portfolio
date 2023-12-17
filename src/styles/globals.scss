@@ -12,3 +12,11 @@ body {
   transform: translateX(50%);
   width: 90%;
 }
+
+.arrow-line-home {
+  position: absolute;
+  height: 85%;
+  top: 50%;
+  left: -30%;
+  transform: translateY(-50%);
+}

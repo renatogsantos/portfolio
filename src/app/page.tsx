@@ -1,5 +1,6 @@
 import MainButton from "@/components/Button";
 import MainNavbar from "@/components/Navbar";
+import HomeSection from "@/components/sections/HomeSection";
 import { PaintBrush } from "@phosphor-icons/react";
 
 export default function Home() {
@@ -7,34 +8,7 @@ export default function Home() {
     <>
       <MainNavbar />
       <main className="p-4">
-        <div className="container mx-auto rounded-3xl dark:bg-slate-800 bg-white mt-12 shadow-lg grid lg:grid-cols-2">
-          <div className="flex flex-col gap-6 p-12 lg:p-24">
-            <p className="text-main-700 dark:text-white text-1xl xl:text-2xl font-bold">
-              Construindo o futuro
-              <br /> através de design e tecnologia
-            </p>
-            <h1 className="text-4xl lg:text-6xl xl:text-8xl font-extrabold text-main-700 dark:text-white">
-              StudioDigital
-            </h1>
-            <p className="text-main-700 dark:text-white text-2xl xl:text-3xl font-bold">
-              Seu sucesso é nossa missão
-            </p>
-            <MainButton title="Entre em contato" />
-            <div className="flex items-center gap-4">
-              <span className="font-medium text-main-700 dark:text-white">Design</span>
-              <span className="font-medium text-main-700 dark:text-white">Coding</span>
-              <span className="font-medium text-main-700 dark:text-white">Business</span>
-            </div>
-          </div>
-          <div className="relative hidden lg:flex">
-            <img
-              draggable={false}
-              src="/man-home.png"
-              alt="Homem gritando"
-              className="man-home"
-            />
-          </div>
-        </div>
+        <HomeSection />
         <div className="container mx-auto p-4">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
