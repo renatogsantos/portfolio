@@ -14,14 +14,14 @@ import { Link } from "@nextui-org/react";
 export default function HomeSection() {
   return (
     <>
-      <div className="container mx-auto rounded-3xl dark:bg-slate-800 bg-white mt-12 shadow-lg grid lg:grid-cols-2">
-        <div className="flex flex-col gap-6 p-10 lg:p-18 xl:p-24">
+      <div className="container mx-auto rounded-3xl dark:bg-slate-800 bg-white lg:mt-12 shadow-lg grid lg:grid-cols-2">
+        <div className="flex flex-col gap-6 p-8 lg:p-14 xl:p-16">
           <p className="text-main-700 dark:text-white text-1xl xl:text-2xl font-bold">
             Construindo o futuro
             <br /> através de design e tecnologia
           </p>
           <h1
-            className="text-4xl md:text-4xl lg:text-4xl xl:text-8xl font-extrabold text-main-700 dark:text-white"
+            className="text-4xl md:text-6xl xl:text-8xl font-extrabold text-main-700 dark:text-white"
             defaultValue="Studio Digital"
           >
             Studio<span className="text-main-100">Digital</span>
@@ -65,8 +65,8 @@ export default function HomeSection() {
           />
         </div>
       </div>
-      <div className="container mx-auto p-4 hidden lg:flex justify-between">
-        <span className="text-main-700 dark:text-white font-medium">
+      <div className="container mx-auto p-4 flex justify-center lg:justify-between">
+        <span className="text-main-700 dark:text-white font-medium hidden lg:flex">
           Conheça mais sobre o StudioDigital
         </span>
         <div className="flex items-center gap-4">
