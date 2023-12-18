@@ -26,11 +26,11 @@ export default function HeroOne() {
           <div className="xl:w-full">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
               <motion.div
-                initial={{ opacity: 0, scale: 0.95, y: -40 }}
-                whileInView={{ opacity: 1, scale: 1, y: 0 }}
-                exit={{ opacity: 0, scale: 0.95, y: 40 }}
+                initial={{ opacity: 0, scale: .95, x: -120 }}
+                whileInView={{ opacity: 1, scale: 1, x: 0 }}
+                exit={{ opacity: 0, scale: .95, x: 120 }}
                 transition={{ duration: 0.8, bounce: 0.3, type: "spring" }}
-                className="flex flex-col gap-4 p-6 m-3 hover:bg-white dark:hover:bg-main-700 rounded-3xl hover:shadow-lg transition ease-in-out"
+                className="flex flex-col gap-4 p-6"
               >
                 <div className="card-icon">
                   <BezierCurve size={40} weight="duotone" />
@@ -51,11 +51,11 @@ export default function HeroOne() {
               </motion.div>
 
               <motion.div
-                initial={{ opacity: 0, scale: 0.95, y: -40 }}
-                whileInView={{ opacity: 1, scale: 1, y: 0 }}
-                exit={{ opacity: 0, scale: 0.95, y: 40 }}
+                initial={{ opacity: 0, scale: .95, x: 120 }}
+                whileInView={{ opacity: 1, scale: 1, x: 0 }}
+                exit={{ opacity: 0, scale: .95, x: -120 }}
                 transition={{ duration: 0.8, bounce: 0.3, type: "spring" }}
-                className="flex flex-col gap-4 p-6 m-3 hover:bg-white dark:hover:bg-main-700 rounded-3xl hover:shadow-lg transition ease-in-out"
+                className="flex flex-col gap-4 p-6"
               >
                 <div className="card-icon">
                   <Code size={40} weight="duotone" />
@@ -74,11 +74,11 @@ export default function HeroOne() {
                 </p>
               </motion.div>
               <motion.div
-                initial={{ opacity: 0, scale: 0.95, y: -40 }}
-                whileInView={{ opacity: 1, scale: 1, y: 0 }}
-                exit={{ opacity: 0, scale: 0.95, y: 40 }}
+                initial={{ opacity: 0, scale: .95, x: -120 }}
+                whileInView={{ opacity: 1, scale: 1, x: 0 }}
+                exit={{ opacity: 0, scale: .95, x: 120 }}
                 transition={{ duration: 0.8, bounce: 0.3, type: "spring" }}
-                className="flex flex-col gap-4 p-6 m-3 hover:bg-white dark:hover:bg-main-700 rounded-3xl hover:shadow-lg transition ease-in-out"
+                className="flex flex-col gap-4 p-6"
               >
                 <div className="card-icon">
                   <Flask size={40} weight="duotone" />
@@ -97,11 +97,11 @@ export default function HeroOne() {
                 </p>
               </motion.div>
               <motion.div
-                initial={{ opacity: 0, scale: 0.95, y: -40 }}
-                whileInView={{ opacity: 1, scale: 1, y: 0 }}
-                exit={{ opacity: 0, scale: 0.95, y: 40 }}
+                initial={{ opacity: 0, scale: .95, x: 120 }}
+                whileInView={{ opacity: 1, scale: 1, x: 0 }}
+                exit={{ opacity: 0, scale: .95, x: -120 }}
                 transition={{ duration: 0.8, bounce: 0.3, type: "spring" }}
-                className="flex flex-col gap-4 p-6 m-3 hover:bg-white dark:hover:bg-main-700 rounded-3xl hover:shadow-lg transition ease-in-out"
+                className="flex flex-col gap-4 p-6"
               >
                 <div className="card-icon">
                   <ChartLineUp size={40} weight="duotone" />
