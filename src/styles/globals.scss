@@ -2,7 +2,6 @@ body {
   background: url("/bg.svg");
   background-size: 100%;
   background-position: top center;
-  user-select: none;
 }
 
 .bg-home {
@@ -26,4 +25,17 @@ body {
   top: 50%;
   left: -30%;
   transform: translateY(-50%);
+}
+
+.card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  height: 6px;
+  width: 20%;
+  border-radius: 12px;
+  background: linear-gradient(45deg, #6401ff 0%, #fa00ff 50%, #ff3600 100%);
+  width: 60px;
+  height: 60px;
 }
