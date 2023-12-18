@@ -117,24 +117,16 @@ export default function MainNavbar() {
         </NavbarItem>
       </NavbarContent>
       <NavbarMenu>
-        {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}`}>
-            <Link
-              color={
-                index === 2
-                  ? "primary"
-                  : index === menuItems.length - 1
-                  ? "danger"
-                  : "foreground"
-              }
-              className="w-full"
-              href="#"
-              size="lg"
-            >
-              {item}
-            </Link>
-          </NavbarMenuItem>
-        ))}
+        <NavbarMenuItem>
+          <Link
+            className="font-medium w-full text-main-700 dark:text-white flex items-center gap-2"
+            href="https://calendar.app.google/7ZiptucnE3S7YABH7"
+            target="_blank"
+            size="lg"
+          >
+            <CalendarPlus size={24} weight="duotone" /> Agendar Video Chamada
+          </Link>
+        </NavbarMenuItem>
       </NavbarMenu>
     </Navbar>
   );
