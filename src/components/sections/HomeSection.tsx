@@ -8,7 +8,7 @@ import {
   WhatsappLogo,
 } from "@phosphor-icons/react";
 import MainButton from "../Button";
-import { Link } from "@nextui-org/react";
+import { Link, Tooltip } from "@nextui-org/react";
 
 export default function HomeSection() {
   return (
@@ -69,15 +69,48 @@ export default function HomeSection() {
           Conheça mais sobre o StudioDigital
         </span>
         <div className="flex items-center gap-4">
-          <Link href="#" color="secondary" aria-label="Entre em contato via Whatsapp">
-            <WhatsappLogo size={24} weight="duotone" />
-          </Link>
-          <Link href="#" color="secondary" aria-label="Entre em contato via Linkedin">
-            <LinkedinLogo size={24} weight="duotone" />
-          </Link>
-          <Link href="#" color="secondary" aria-label="Entre em contato via X">
-            <TwitterLogo size={24} weight="duotone"/>
-          </Link>
+          <Tooltip
+            placement="bottom"
+            showArrow={true}
+            content="Entre em contato via Whatsapp"
+            color="primary"
+          >
+            <Link
+              href="#"
+              color="secondary"
+              aria-label="Entre em contato via Whatsapp"
+            >
+              <WhatsappLogo size={24} weight="duotone" />
+            </Link>
+          </Tooltip>
+          <Tooltip
+            placement="bottom"
+            showArrow={true}
+            content="Entre em contato via Linkedin"
+            color="primary"
+          >
+            <Link
+              href="#"
+              color="secondary"
+              aria-label="Entre em contato via Linkedin"
+            >
+              <LinkedinLogo size={24} weight="duotone" />
+            </Link>
+          </Tooltip>
+          <Tooltip
+            placement="bottom"
+            showArrow={true}
+            content="Entre em contato via X"
+            color="primary"
+          >
+            <Link
+              href="#"
+              color="secondary"
+              aria-label="Entre em contato via X"
+            >
+              <TwitterLogo size={24} weight="duotone" />
+            </Link>
+          </Tooltip>
         </div>
       </div>
     </>

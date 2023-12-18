@@ -57,6 +57,8 @@ export default function MainNavbar() {
               </span>
               <Link
                 href="https://www.linkedin.com/in/renato-g-santos/"
+                aria-label="Perfil Linkedin"
+                target="_blank"
                 className="text-[12px] font-medium m-0 p-0 leading-none text-main-700 dark:text-white"
               >
                 <LinkedinLogo size={16} weight="duotone" /> Perfil Linkedin
@@ -101,12 +103,13 @@ export default function MainNavbar() {
           <Tooltip
             placement="bottom"
             showArrow={true}
-            content="Agendar Video Chamada"
+            content="Agendar Reunião"
+            color="primary"
           >
             <Button
               isIconOnly
               variant="bordered"
-              aria-label="Agendar Video Chamada"
+              aria-label="Agendar Reunião"
               as={Link}
               target="_blank"
               href="https://calendar.app.google/7ZiptucnE3S7YABH7"
@@ -124,7 +127,7 @@ export default function MainNavbar() {
             target="_blank"
             size="lg"
           >
-            <CalendarPlus size={24} weight="duotone" /> Agendar Video Chamada
+            <CalendarPlus size={24} weight="duotone" /> Agendar Reunião
           </Link>
         </NavbarMenuItem>
       </NavbarMenu>
