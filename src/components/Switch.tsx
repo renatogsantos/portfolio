@@ -15,6 +15,9 @@ export default function MainSwitch() {
   if (!mounted) return null;
   return (
     <Switch
+      id="tema"
+      name="tema"
+      aria-label="Alterar tema"
       defaultSelected
       size="lg"
       color="primary"

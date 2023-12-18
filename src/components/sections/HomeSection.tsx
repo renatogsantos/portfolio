@@ -2,7 +2,6 @@
 import {
   Code,
   LinkedinLogo,
-  MouseSimple,
   PaintBrush,
   RocketLaunch,
   TwitterLogo,
@@ -70,14 +69,14 @@ export default function HomeSection() {
           Conheça mais sobre o StudioDigital
         </span>
         <div className="flex items-center gap-4">
-          <Link href="#" color="secondary">
+          <Link href="#" color="secondary" aria-label="Entre em contato via Whatsapp">
             <WhatsappLogo size={24} weight="duotone" />
           </Link>
-          <Link href="#" color="secondary">
+          <Link href="#" color="secondary" aria-label="Entre em contato via Linkedin">
             <LinkedinLogo size={24} weight="duotone" />
           </Link>
-          <Link href="#" color="secondary">
-            <TwitterLogo size={24} weight="duotone" />
+          <Link href="#" color="secondary" aria-label="Entre em contato via X">
+            <TwitterLogo size={24} weight="duotone"/>
           </Link>
         </div>
       </div>

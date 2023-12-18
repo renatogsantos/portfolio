@@ -48,7 +48,7 @@ export default function MainNavbar() {
           <div className="flex items-center gap-2">
             <Avatar
               isBordered
-              color="success"
+              color="primary"
               src="https://github.com/renatogsantos.png"
             />
             <div className="flex flex-col gap-1">
@@ -108,6 +108,7 @@ export default function MainNavbar() {
               variant="bordered"
               aria-label="Agendar Video Chamada"
               as={Link}
+              target="_blank"
               href="https://calendar.app.google/7ZiptucnE3S7YABH7"
             >
               <CalendarPlus size={24} weight="duotone" />
