@@ -7,7 +7,7 @@ export default function HeroOne() {
     <>
       <div className="container mx-auto">
         <div className="flex flex-col xl:items-center gap-6">
-          <div className="xl:w-full py-12">
+          <div className="xl:w-full py-12 p-6">
             <h2 className="text-3xl xl:text-6xl font-bold text-main-700 dark:text-white">
               Transforme sua <b>Presença Online</b>
             </h2>
