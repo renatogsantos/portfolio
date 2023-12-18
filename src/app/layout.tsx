@@ -10,6 +10,8 @@ export const metadata: Metadata = {
   title: "Renato G Santos",
   description:
     "Desenvolvedor Web Front End e Designer UX UI apaixonado por transformar ideias em experiências digitais extraordinárias.",
+  keywords:
+    "design UX/UI, experiência digital, presença online, design imersivo,desenvolvimento web, Next.js, performance do site, experiência do usuário, experiências digitais, inovação, design, presença online, sucesso online, presença online, estratégias digitais, visibilidade",
 };
 
 export default function RootLayout({
