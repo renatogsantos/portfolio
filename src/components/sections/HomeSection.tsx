@@ -1,10 +1,10 @@
 "use client";
 import {
   Code,
+  GithubLogo,
   LinkedinLogo,
   PaintBrush,
   RocketLaunch,
-  TwitterLogo,
   WhatsappLogo,
 } from "@phosphor-icons/react";
 import MainButton from "../Button";
@@ -72,13 +72,14 @@ export default function HomeSection() {
           <Tooltip
             placement="bottom"
             showArrow={true}
-            content="Entre em contato via Whatsapp"
+            content="Whatsapp"
             color="primary"
           >
             <Link
-              href="#"
+              href="https://api.whatsapp.com/send?phone=5511911882402&text=Ol%C3%A1%20Renato,%20pode%20me%20ajudar?"
+              target="_blank"
               color="secondary"
-              aria-label="Entre em contato via Whatsapp"
+              aria-label="Whatsapp"
             >
               <WhatsappLogo size={24} weight="duotone" />
             </Link>
@@ -86,13 +87,14 @@ export default function HomeSection() {
           <Tooltip
             placement="bottom"
             showArrow={true}
-            content="Entre em contato via Linkedin"
+            content="Linkedin"
             color="primary"
           >
             <Link
-              href="#"
+              href="https://www.linkedin.com/in/renato-g-santos/"
+              target="_blank"
               color="secondary"
-              aria-label="Entre em contato via Linkedin"
+              aria-label="Linkedin"
             >
               <LinkedinLogo size={24} weight="duotone" />
             </Link>
@@ -100,15 +102,16 @@ export default function HomeSection() {
           <Tooltip
             placement="bottom"
             showArrow={true}
-            content="Entre em contato via X"
+            content="Github"
             color="primary"
           >
             <Link
-              href="#"
+              href="https://github.com/renatogsantos"
+              target="_blank"
               color="secondary"
-              aria-label="Entre em contato via X"
+              aria-label="Github"
             >
-              <TwitterLogo size={24} weight="duotone" />
+              <GithubLogo size={24} weight="duotone" />
             </Link>
           </Tooltip>
         </div>
