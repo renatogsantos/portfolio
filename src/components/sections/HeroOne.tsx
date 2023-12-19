@@ -26,9 +26,9 @@ export default function HeroOne() {
           <div className="xl:w-full">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
               <motion.div
-                initial={{ opacity: 0, y: -40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: 40 }}
+                initial={{ opacity: 0, scale: 0.8, y: -120 }}
+                whileInView={{ opacity: 1, scale: 1, y: 0 }}
+                exit={{ opacity: 0, scale: 0.8, y: 120 }}
                 transition={{ duration: 0.8, bounce: 0.3, type: "spring" }}
                 className="flex flex-col gap-4 p-6"
               >
@@ -51,9 +51,9 @@ export default function HeroOne() {
               </motion.div>
 
               <motion.div
-                initial={{ opacity: 0, y: -40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: 40 }}
+                initial={{ opacity: 0, scale: 0.8, y: -120 }}
+                whileInView={{ opacity: 1, scale: 1, y: 0 }}
+                exit={{ opacity: 0, scale: 0.8, y: 120 }}
                 transition={{ duration: 0.8, bounce: 0.3, type: "spring" }}
                 className="flex flex-col gap-4 p-6"
               >
@@ -74,9 +74,9 @@ export default function HeroOne() {
                 </p>
               </motion.div>
               <motion.div
-                initial={{ opacity: 0, y: -40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: 40 }}
+                initial={{ opacity: 0, scale: 0.8, y: -120 }}
+                whileInView={{ opacity: 1, scale: 1, y: 0 }}
+                exit={{ opacity: 0, scale: 0.8, y: 120 }}
                 transition={{ duration: 0.8, bounce: 0.3, type: "spring" }}
                 className="flex flex-col gap-4 p-6"
               >
@@ -97,9 +97,9 @@ export default function HeroOne() {
                 </p>
               </motion.div>
               <motion.div
-                initial={{ opacity: 0, y: -40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: 40 }}
+                initial={{ opacity: 0, scale: 0.8, y: -120 }}
+                whileInView={{ opacity: 1, scale: 1, y: 0 }}
+                exit={{ opacity: 0, scale: 0.8, y: 120 }}
                 transition={{ duration: 0.8, bounce: 0.3, type: "spring" }}
                 className="flex flex-col gap-4 p-6"
               >
