@@ -7,9 +7,9 @@ export default function HeroOne() {
   return (
     <>
       <motion.div
-        initial={{ opacity: 0, y: 100 }}
+        initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: 100 }}
+        exit={{ opacity: 0, y: 50 }}
         transition={{
           duration: 1,
           bounce: 0.6,
@@ -23,9 +23,9 @@ export default function HeroOne() {
       <div className="container mx-auto">
         <div className="flex flex-col xl:items-center gap-6">
           <motion.div
-            initial={{ opacity: 0, y: 100 }}
+            initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 100 }}
+            exit={{ opacity: 0, y: 50 }}
             transition={{
               duration: 1,
               bounce: 0.6,
@@ -52,9 +52,9 @@ export default function HeroOne() {
           <div className="xl:w-full">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
               <motion.div
-                initial={{ opacity: 0, y: 100 }}
+                initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: 100 }}
+                exit={{ opacity: 0, y: 50 }}
                 transition={{
                   duration: 1,
                   bounce: 0.6,
@@ -82,9 +82,9 @@ export default function HeroOne() {
               </motion.div>
 
               <motion.div
-                initial={{ opacity: 0, y: 100 }}
+                initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: 100 }}
+                exit={{ opacity: 0, y: 50 }}
                 transition={{
                   duration: 1,
                   bounce: 0.6,
@@ -110,9 +110,9 @@ export default function HeroOne() {
                 </p>
               </motion.div>
               <motion.div
-                initial={{ opacity: 0, y: 100 }}
+                initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: 100 }}
+                exit={{ opacity: 0, y: 50 }}
                 transition={{
                   duration: 1,
                   bounce: 0.6,
@@ -138,9 +138,9 @@ export default function HeroOne() {
                 </p>
               </motion.div>
               <motion.div
-                initial={{ opacity: 0, y: 100 }}
+                initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: 100 }}
+                exit={{ opacity: 0, y: 50 }}
                 transition={{
                   duration: 1,
                   bounce: 0.6,
