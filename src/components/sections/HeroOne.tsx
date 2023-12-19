@@ -1,18 +1,38 @@
 "use client";
 import { BezierCurve, ChartLineUp, Code, Flask } from "@phosphor-icons/react";
 import { motion } from "framer-motion";
+import ParallaxText from "../ParallaxText";
 
 export default function HeroOne() {
   return (
     <>
-      <div className="container mx-auto py-4">
-        <div className="flex flex-col xl:items-center gap-6 py-8">
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: 100 }}
+        transition={{
+          duration: 1,
+          bounce: 0.6,
+          type: "spring",
+          delay: 0.5,
+        }}
+      >
+        <ParallaxText baseVelocity={-1}>STUDIO</ParallaxText>
+        <ParallaxText baseVelocity={1}>DIGITAL</ParallaxText>
+      </motion.div>
+      <div className="container mx-auto">
+        <div className="flex flex-col xl:items-center gap-6">
           <motion.div
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 100 }}
-            transition={{ duration: 1, bounce: 0.6, type: "spring", delay: .5 }}
-            className="xl:w-full py-12 p-6"
+            transition={{
+              duration: 1,
+              bounce: 0.6,
+              type: "spring",
+              delay: 0.5,
+            }}
+            className="xl:w-full p-6"
           >
             <h2 className="text-3xl xl:text-6xl font-bold text-main-700 dark:text-white">
               Transforme sua <b>Presença Online</b>
@@ -39,7 +59,7 @@ export default function HeroOne() {
                   duration: 1,
                   bounce: 0.6,
                   type: "spring",
-                  delay: .5,
+                  delay: 0.5,
                 }}
                 className="flex flex-col gap-4 p-6"
               >
@@ -69,7 +89,7 @@ export default function HeroOne() {
                   duration: 1,
                   bounce: 0.6,
                   type: "spring",
-                  delay: .5,
+                  delay: 0.5,
                 }}
                 className="flex flex-col gap-4 p-6"
               >
@@ -97,7 +117,7 @@ export default function HeroOne() {
                   duration: 1,
                   bounce: 0.6,
                   type: "spring",
-                  delay: .5,
+                  delay: 0.5,
                 }}
                 className="flex flex-col gap-4 p-6"
               >
@@ -125,7 +145,7 @@ export default function HeroOne() {
                   duration: 1,
                   bounce: 0.6,
                   type: "spring",
-                  delay: .5,
+                  delay: 0.5,
                 }}
                 className="flex flex-col gap-4 p-6"
               >
