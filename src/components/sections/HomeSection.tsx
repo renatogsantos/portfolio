@@ -71,10 +71,10 @@ export default function HomeSection() {
         </div>
       </motion.div>
       <motion.div
-        initial={{ opacity: 0, y: 100 }}
+        initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: 100 }}
-        transition={{ duration: 1, bounce: 0.6, type: "spring", delay: 0.5 }}
+        exit={{ opacity: 0, y: 20 }}
+        transition={{ duration: 1, bounce: 0.4, type: "spring", delay: 0.5 }}
         className="container mx-auto p-4 flex justify-center lg:justify-between"
       >
         <span className="text-main-700 dark:text-white font-medium hidden lg:flex">

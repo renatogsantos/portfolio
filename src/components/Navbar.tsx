@@ -17,7 +17,12 @@ import {
   ModalContent,
 } from "@nextui-org/react";
 import MainSwitch from "./Switch";
-import { CalendarPlus, LinkedinLogo } from "@phosphor-icons/react";
+import {
+  CalendarPlus,
+  GithubLogo,
+  LinkedinLogo,
+  WhatsappLogo,
+} from "@phosphor-icons/react";
 
 export default function MainNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,18 +30,6 @@ export default function MainNavbar() {
 
   return (
     <>
-      <Modal isOpen={isOpen} onOpenChange={onOpenChange} size="5xl">
-        <ModalContent>
-          <div className="py-12">
-            <iframe
-              src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0bRWPoffqHJ4DJg74H-HKmLTzhAZYoNR8lKCf790odddlQjauIx03_s0ygb5C66R6oi6sb1M_D?gv=true"
-              style={{ border: 0 }}
-              width="100%"
-              height="600"
-            />
-          </div>
-        </ModalContent>
-      </Modal>
       <Navbar
         onMenuOpenChange={setIsMenuOpen}
         shouldHideOnScroll
@@ -74,52 +67,61 @@ export default function MainNavbar() {
 
         <NavbarContent className="hidden sm:flex gap-4" justify="center">
           <NavbarItem>
-            <Link
-              href="#"
-              className="text-main-700 dark:text-white font-medium hover:text-main-100"
+            <Tooltip
+              placement="bottom"
+              showArrow={true}
+              content="Whatsapp"
+              color="primary"
             >
-              Início
-            </Link>
+              <Link
+                href="https://api.whatsapp.com/send?phone=5511911882402&text=Ol%C3%A1%20Renato,%20pode%20me%20ajudar?"
+                target="_blank"
+                color="secondary"
+                aria-label="Whatsapp"
+              >
+                <WhatsappLogo size={24} weight="duotone" />
+              </Link>
+            </Tooltip>
           </NavbarItem>
           <NavbarItem>
-            <Link
-              href="#"
-              className="text-main-700 dark:text-white font-medium hover:text-main-100"
+            <Tooltip
+              placement="bottom"
+              showArrow={true}
+              content="Linkedin"
+              color="primary"
             >
-              Sobre nós
-            </Link>
+              <Link
+                href="https://www.linkedin.com/in/renato-g-santos/"
+                target="_blank"
+                color="secondary"
+                aria-label="Linkedin"
+              >
+                <LinkedinLogo size={24} weight="duotone" />
+              </Link>
+            </Tooltip>
           </NavbarItem>
           <NavbarItem>
-            <Link
-              href="#"
-              className="text-main-700 dark:text-white font-medium hover:text-main-100"
+            <Tooltip
+              placement="bottom"
+              showArrow={true}
+              content="Github"
+              color="primary"
             >
-              Soluções
-            </Link>
+              <Link
+                href="https://github.com/renatogsantos"
+                target="_blank"
+                color="secondary"
+                aria-label="Github"
+              >
+                <GithubLogo size={24} weight="duotone" />
+              </Link>
+            </Tooltip>
           </NavbarItem>
         </NavbarContent>
 
         <NavbarContent justify="end" className="gap-2">
           <NavbarItem>
             <MainSwitch />
-          </NavbarItem>
-          <NavbarItem>
-            <Tooltip
-              placement="bottom"
-              showArrow={true}
-              content="Reservar horário"
-              color="primary"
-            >
-              <Button
-                isIconOnly
-                variant="bordered"
-                aria-label="Reservar horário"
-                target="_blank"
-                onClick={onOpen}
-              >
-                <CalendarPlus size={24} weight="duotone" />
-              </Button>
-            </Tooltip>
           </NavbarItem>
         </NavbarContent>
         <NavbarMenu>

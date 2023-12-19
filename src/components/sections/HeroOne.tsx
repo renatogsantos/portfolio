@@ -101,7 +101,7 @@ export default function HeroOne() {
                 </h3>
                 <p className="text-sm">
                   Explore o futuro da web com o Studio Digital! Nossa equipe de
-                  Desenvolvimento Web utiliza tecnologias avançadas como Next.js
+                  Desenvolvimento utiliza ferramentas como Next.js, Tailwind, Typescript
                   para criar websites rápidos, responsivos e inovadores.
                   Descubra como podemos otimizar a performance do seu site,
                   proporcionando uma experiência de usuário excepcional. Alcance
