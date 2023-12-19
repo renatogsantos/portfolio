@@ -9,11 +9,17 @@ import {
 } from "@phosphor-icons/react";
 import MainButton from "../Button";
 import { Link, Tooltip } from "@nextui-org/react";
+import { motion } from "framer-motion";
 
 export default function HomeSection() {
   return (
     <>
-      <div className="container mx-auto rounded-3xl dark:bg-slate-800 bg-white lg:mt-12 xl:mt-24 shadow-lg grid lg:grid-cols-2 bg-home">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: 20 }}
+        className="container mx-auto rounded-3xl dark:bg-slate-800 bg-white lg:mt-12 xl:mt-24 shadow-lg grid lg:grid-cols-2 bg-home"
+      >
         <div className="flex flex-col gap-6 p-8 lg:p-14 xl:p-16">
           <p className="text-main-700 dark:text-white text-1xl xl:text-2xl font-bold">
             Construindo o futuro
@@ -63,8 +69,14 @@ export default function HomeSection() {
             className="man-home"
           />
         </div>
-      </div>
-      <div className="container mx-auto p-4 flex justify-center lg:justify-between">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: 100 }}
+        transition={{ duration: 1, bounce: 0.6, type: "spring", delay: 0.5 }}
+        className="container mx-auto p-4 flex justify-center lg:justify-between"
+      >
         <span className="text-main-700 dark:text-white font-medium hidden lg:flex">
           Conheça mais sobre o StudioDigital
         </span>
@@ -115,7 +127,7 @@ export default function HomeSection() {
             </Link>
           </Tooltip>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }
