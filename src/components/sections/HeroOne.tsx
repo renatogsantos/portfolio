@@ -6,7 +6,7 @@ export default function HeroOne() {
   return (
     <>
       <div className="container mx-auto py-4">
-        <div className="flex flex-col xl:items-center gap-6">
+        <div className="flex flex-col xl:items-center gap-6 py-8">
           <div className="xl:w-full py-12 p-6">
             <h2 className="text-3xl xl:text-6xl font-bold text-main-700 dark:text-white">
               Transforme sua <b>Presença Online</b>
@@ -26,10 +26,10 @@ export default function HeroOne() {
           <div className="xl:w-full">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
               <motion.div
-                initial={{ opacity: 0, scale: 0.8, y: -120 }}
-                whileInView={{ opacity: 1, scale: 1, y: 0 }}
-                exit={{ opacity: 0, scale: 0.8, y: 120 }}
-                transition={{ duration: 0.8, bounce: 0.3, type: "spring" }}
+                initial={{ opacity: 0, y: -100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 100 }}
+                transition={{ duration: 1, bounce: 0.6, type: "spring" }}
                 className="flex flex-col gap-4 p-6"
               >
                 <div className="card-icon">
@@ -51,10 +51,10 @@ export default function HeroOne() {
               </motion.div>
 
               <motion.div
-                initial={{ opacity: 0, scale: 0.8, y: -120 }}
-                whileInView={{ opacity: 1, scale: 1, y: 0 }}
-                exit={{ opacity: 0, scale: 0.8, y: 120 }}
-                transition={{ duration: 0.8, bounce: 0.3, type: "spring" }}
+                initial={{ opacity: 0, y: -100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 100 }}
+                transition={{ duration: 1, bounce: 0.6, type: "spring" }}
                 className="flex flex-col gap-4 p-6"
               >
                 <div className="card-icon">
@@ -74,10 +74,10 @@ export default function HeroOne() {
                 </p>
               </motion.div>
               <motion.div
-                initial={{ opacity: 0, scale: 0.8, y: -120 }}
-                whileInView={{ opacity: 1, scale: 1, y: 0 }}
-                exit={{ opacity: 0, scale: 0.8, y: 120 }}
-                transition={{ duration: 0.8, bounce: 0.3, type: "spring" }}
+                initial={{ opacity: 0, y: -100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 100 }}
+                transition={{ duration: 1, bounce: 0.6, type: "spring" }}
                 className="flex flex-col gap-4 p-6"
               >
                 <div className="card-icon">
@@ -97,10 +97,10 @@ export default function HeroOne() {
                 </p>
               </motion.div>
               <motion.div
-                initial={{ opacity: 0, scale: 0.8, y: -120 }}
-                whileInView={{ opacity: 1, scale: 1, y: 0 }}
-                exit={{ opacity: 0, scale: 0.8, y: 120 }}
-                transition={{ duration: 0.8, bounce: 0.3, type: "spring" }}
+                initial={{ opacity: 0, y: -100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 100 }}
+                transition={{ duration: 1, bounce: 0.6, type: "spring" }}
                 className="flex flex-col gap-4 p-6"
               >
                 <div className="card-icon">
