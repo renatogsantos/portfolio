@@ -68,6 +68,17 @@ body {
 }
 
 .studio-digital {
-  opacity: .05;
+  opacity: 0.05;
   user-select: none;
+}
+
+.card-portfolio {
+  background-size: 101%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  transition: 2s ease-out;
+  &:hover {
+    background-position: bottom center;
+    transition: 8s ease-in;
+  }
 }
