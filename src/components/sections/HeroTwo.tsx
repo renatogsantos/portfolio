@@ -21,10 +21,9 @@ export default function HeroTwo() {
         exit={{ opacity: 0, y: 50 }}
         viewport={{ once: true }}
         transition={{
-          duration: 1,
+          duration: .5,
           bounce: 0.6,
           type: "spring",
-          delay: 0.5,
         }}
       >
         <ParallaxText baseVelocity={1}>PORTFÓLIO</ParallaxText>

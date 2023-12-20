@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { LinkSimple } from "@phosphor-icons/react";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -20,11 +20,14 @@ export default function CardPortfolio({
     <motion.div
       initial={{ scale: 0 }}
       whileInView={{ scale: 1 }}
-      viewport={{ once: true }}
+      //viewport={{ once: true }}
       transition={{ duration: 1, bounce: 0.2, type: "spring", delay: 0.5 }}
       className="flex flex-col gap-1 relative"
     >
-      <div
+      <motion.div
+        initial={{ backgroundPosition: "top center" }}
+        whileInView={{ backgroundPosition:"bottom center"}}
+        transition={{ duration: 20, delay: 2, ease: "easeInOut" }}
         className="bg-slate-400 rounded xl:rounded-2xl aspect-video card-portfolio"
         style={{ backgroundImage: `url(${image})` }}
       />

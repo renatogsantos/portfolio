@@ -76,11 +76,6 @@ body {
   background-size: 101%;
   background-repeat: no-repeat;
   background-position: top center;
-  transition: 1s ease-out;
+  transition: 20s ease-out;
   transform: perspective(900px) rotateX(6deg);
-  &:hover {
-    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
-    background-position: bottom center;
-    transition: 8s ease-in;
-  }
 }
