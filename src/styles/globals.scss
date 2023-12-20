@@ -1,7 +1,8 @@
 body {
   background: url("/bg.svg");
-  background-size: 100%;
+  background-size: contain;
   background-position: top center;
+  background-repeat: no-repeat;
   scroll-behavior: smooth;
 }
 

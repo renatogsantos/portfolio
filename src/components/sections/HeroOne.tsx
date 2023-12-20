@@ -23,7 +23,7 @@ export default function HeroOne() {
         whileInView={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: 50 }}
         transition={{
-          duration: 1,
+          duration: .5,
           bounce: 0.6,
           type: "spring",
           delay: 0.5,
@@ -39,7 +39,7 @@ export default function HeroOne() {
             whileInView={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 50 }}
             transition={{
-              duration: 1,
+              duration: .5,
               bounce: 0.6,
               type: "spring",
               delay: 0.5,
@@ -204,7 +204,7 @@ export default function HeroOne() {
                 whileInView={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 50 }}
                 transition={{
-                  duration: 1,
+                  duration: .5,
                   bounce: 0.6,
                   type: "spring",
                   delay: 0.5,
@@ -234,7 +234,7 @@ export default function HeroOne() {
                 whileInView={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 50 }}
                 transition={{
-                  duration: 1,
+                  duration: .5,
                   bounce: 0.6,
                   type: "spring",
                   delay: 0.5,
@@ -263,7 +263,7 @@ export default function HeroOne() {
                 whileInView={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 50 }}
                 transition={{
-                  duration: 1,
+                  duration: .5,
                   bounce: 0.6,
                   type: "spring",
                   delay: 0.5,
@@ -291,7 +291,7 @@ export default function HeroOne() {
                 whileInView={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 50 }}
                 transition={{
-                  duration: 1,
+                  duration: .5,
                   bounce: 0.6,
                   type: "spring",
                   delay: 0.5,
