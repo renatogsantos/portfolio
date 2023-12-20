@@ -43,7 +43,7 @@ export default function HeroTwo() {
               type: "spring",
               delay: 0.5,
             }}
-            className="xl:w-1/3 p-6 sticky xl:top-10 h-full"
+            className="xl:w-1/3 p-6 sticky xl:top-12 h-full"
           >
             <h2 className="text-3xl xl:text-6xl font-bold text-main-700 dark:text-white">
               Conheça <b>Nosso Portfólio</b>
@@ -73,11 +73,15 @@ export default function HeroTwo() {
             <CardPortfolio
               image="/pokedexplore.png"
               title="PokédExplore"
-              description="Um site para quem é fã de pokémon e deseja captura alguns para sua coleção"
+              description="Um espaço online dedicado aos verdadeiros aficionados por Pokémon que desejam ampliar suas coleções capturando novos exemplares."
+              link="https://pokedexplore.vercel.app/"
             />
-            <CardPortfolio image="" title="" description="" />
-            <CardPortfolio image="" title="" description="" />
-            <CardPortfolio image="" title="" description="" />
+            <CardPortfolio
+              image="lithiumbr.png"
+              title="Lithium BR"
+              description="LithiumBR: A principal loja online para produtos Apple! Descubra a excelência em tecnologia com a garantia de qualidade e estilo."
+              link="https://www.lithiumbr.com/"
+            />
           </motion.div>
         </div>
       </div>
