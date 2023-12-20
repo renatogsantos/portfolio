@@ -1,7 +1,19 @@
 "use client";
+import { TbBrandNextjs } from "react-icons/tb";
+import { SiTailwindcss } from "react-icons/si";
+import { RiNpmjsFill } from "react-icons/ri";
+import {
+  BiLogoTypescript,
+  BiLogoHtml5,
+  BiLogoCss3,
+  BiLogoJavascript,
+  BiLogoReact,
+  BiLogoRedux,
+} from "react-icons/bi";
 import { BezierCurve, ChartLineUp, Code, Flask } from "@phosphor-icons/react";
 import { motion } from "framer-motion";
 import ParallaxText from "../ParallaxText";
+import { Button, Tooltip } from "@nextui-org/react";
 
 export default function HeroOne() {
   return (
@@ -17,8 +29,8 @@ export default function HeroOne() {
           delay: 0.5,
         }}
       >
-        <ParallaxText baseVelocity={-1}>STUDIO</ParallaxText>
-        <ParallaxText baseVelocity={1}>DIGITAL</ParallaxText>
+        <ParallaxText baseVelocity={-1}>TRANSFORME SUA</ParallaxText>
+        <ParallaxText baseVelocity={1}>PRESENÇA ONLINE</ParallaxText>
       </motion.div>
       <div className="container mx-auto">
         <div className="flex flex-col xl:items-center gap-6">
@@ -44,10 +56,146 @@ export default function HeroOne() {
             <p className="font-medium mt-3">
               Descubra o potencial ilimitado da sua presença online através do
               nosso expertise em Design UX/UI e Desenvolvimento Web com
-              tecnologias avançadas como Next.js. Deixe-nos guiar você por uma
-              jornada onde suas ideias se transformam em experiências digitais
-              extraordinárias.
+              tecnologias avançadas como Next.js, Tailwindcss e Typescript.
+              Deixe-nos guiar você por uma jornada onde suas ideias se
+              transformam em experiências digitais extraordinárias.
             </p>
+            <div className="flex py-4">
+              <Tooltip
+                placement="bottom"
+                showArrow={true}
+                content="HTML 5"
+                color="primary"
+              >
+                <Button
+                  size="sm"
+                  isIconOnly
+                  className="bg-transparent text-main-700 dark:text-white"
+                >
+                  <BiLogoHtml5 size={32} />
+                </Button>
+              </Tooltip>
+
+              <Tooltip
+                placement="bottom"
+                showArrow={true}
+                content="CSS 3"
+                color="primary"
+              >
+                <Button
+                  size="sm"
+                  isIconOnly
+                  className="bg-transparent text-main-700 dark:text-white"
+                >
+                  <BiLogoCss3 size={32} />
+                </Button>
+              </Tooltip>
+
+              <Tooltip
+                placement="bottom"
+                showArrow={true}
+                content="Javascript"
+                color="primary"
+              >
+                <Button
+                  size="sm"
+                  isIconOnly
+                  className="bg-transparent text-main-700 dark:text-white"
+                >
+                  <BiLogoJavascript size={32} />
+                </Button>
+              </Tooltip>
+
+              <Tooltip
+                placement="bottom"
+                showArrow={true}
+                content="Typescript"
+                color="primary"
+              >
+                <Button
+                  size="sm"
+                  isIconOnly
+                  className="bg-transparent text-main-700 dark:text-white"
+                >
+                  <BiLogoTypescript size={32} />
+                </Button>
+              </Tooltip>
+
+              <Tooltip
+                placement="bottom"
+                showArrow={true}
+                content="NextJs"
+                color="primary"
+              >
+                <Button
+                  size="sm"
+                  isIconOnly
+                  className="bg-transparent text-main-700 dark:text-white"
+                >
+                  <TbBrandNextjs size={32} />
+                </Button>
+              </Tooltip>
+
+              <Tooltip
+                placement="bottom"
+                showArrow={true}
+                content="Tailwindcss"
+                color="primary"
+              >
+                <Button
+                  size="sm"
+                  isIconOnly
+                  className="bg-transparent text-main-700 dark:text-white"
+                >
+                  <SiTailwindcss size={32} />
+                </Button>
+              </Tooltip>
+
+              <Tooltip
+                placement="bottom"
+                showArrow={true}
+                content="ReactJs"
+                color="primary"
+              >
+                <Button
+                  size="sm"
+                  isIconOnly
+                  className="bg-transparent text-main-700 dark:text-white"
+                >
+                  <BiLogoReact size={32} />
+                </Button>
+              </Tooltip>
+
+              <Tooltip
+                placement="bottom"
+                showArrow={true}
+                content="Redux"
+                color="primary"
+              >
+                <Button
+                  size="sm"
+                  isIconOnly
+                  className="bg-transparent text-main-700 dark:text-white"
+                >
+                  <BiLogoRedux size={32} />
+                </Button>
+              </Tooltip>
+
+              <Tooltip
+                placement="bottom"
+                showArrow={true}
+                content="NPM"
+                color="primary"
+              >
+                <Button
+                  size="sm"
+                  isIconOnly
+                  className="bg-transparent text-main-700 dark:text-white"
+                >
+                  <RiNpmjsFill size={32} />
+                </Button>
+              </Tooltip>
+            </div>
           </motion.div>
           <div className="xl:w-full">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
@@ -101,12 +249,13 @@ export default function HeroOne() {
                 </h3>
                 <p className="text-sm">
                   Explore o futuro da web com o Studio Digital! Nossa equipe de
-                  Desenvolvimento utiliza ferramentas como Next.js, Tailwind, Typescript
-                  para criar websites rápidos, responsivos e inovadores.
-                  Descubra como podemos otimizar a performance do seu site,
-                  proporcionando uma experiência de usuário excepcional. Alcance
-                  novos horizontes com o desenvolvimento web avançado do Studio
-                  Digital e posicione-se à frente no mundo online.
+                  Desenvolvimento utiliza ferramentas como Next.js, Tailwindcss,
+                  Typescript para criar websites rápidos, responsivos e
+                  inovadores. Descubra como podemos otimizar a performance do
+                  seu site, proporcionando uma experiência de usuário
+                  excepcional. Alcance novos horizontes com o desenvolvimento
+                  web avançado do Studio Digital e posicione-se à frente no
+                  mundo online.
                 </p>
               </motion.div>
               <motion.div
