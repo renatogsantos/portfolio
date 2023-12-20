@@ -9,8 +9,9 @@ export default function HeroTwo() {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: 50 }}
+        viewport={{ once: true }}
         transition={{
-          duration: .5,
+          duration: 1,
           bounce: 0.6,
           type: "spring",
           delay: 0.5,
@@ -25,8 +26,9 @@ export default function HeroTwo() {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 50 }}
+            viewport={{ once: true }}
             transition={{
-              duration: .5,
+              duration: 1,
               bounce: 0.6,
               type: "spring",
               delay: 0.5,
@@ -52,8 +54,9 @@ export default function HeroTwo() {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 50 }}
+            viewport={{ once: true }}
             transition={{
-              duration: .5,
+              duration: 1,
               bounce: 0.6,
               type: "spring",
               delay: 0.5,

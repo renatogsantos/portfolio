@@ -17,7 +17,13 @@ export default function HomeSection() {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: 20 }}
+        exit={{ opacity: 0, y: 50 }}
+        viewport={{ once: true }}
+        transition={{
+          duration: 1,
+          bounce: 0.6,
+          type: "spring",
+        }}
         className="container mx-auto rounded-3xl dark:bg-slate-800 bg-white lg:mt-12 xl:mt-24 shadow-lg grid lg:grid-cols-2 bg-home"
       >
         <div className="flex flex-col gap-6 p-8 lg:p-14 xl:p-16">
@@ -73,8 +79,14 @@ export default function HomeSection() {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: 20 }}
-        transition={{ duration: 1, bounce: 0.4, type: "spring", delay: 0.5 }}
+        exit={{ opacity: 0, y: 50 }}
+        viewport={{ once: true }}
+        transition={{
+          duration: 1,
+          bounce: 0.6,
+          type: "spring",
+          delay: 0.5,
+        }}
         className="container mx-auto p-4 flex justify-center lg:justify-between"
       >
         <span className="text-main-700 dark:text-white font-medium hidden lg:flex">
