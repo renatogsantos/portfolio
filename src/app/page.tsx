@@ -1,5 +1,6 @@
 import MainNavbar from "@/components/Navbar";
 import HeroOne from "@/components/sections/HeroOne";
+import HeroTwo from "@/components/sections/HeroTwo";
 import HomeSection from "@/components/sections/HomeSection";
 
 export default function Home() {
@@ -12,6 +13,9 @@ export default function Home() {
         </section>
         <section id="about">
           <HeroOne />
+        </section>
+        <section id="client">
+          <HeroTwo />
         </section>
       </main>
     </>
