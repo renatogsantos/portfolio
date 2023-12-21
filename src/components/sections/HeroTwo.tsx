@@ -42,7 +42,7 @@ export default function HeroTwo() {
               type: "spring",
               delay: 0.5,
             }}
-            className="xl:w-1/2 p-6 sticky xl:top-12 h-full"
+            className="xl:w-full p-6 sticky xl:top-12 h-full"
           >
             <h2 className="text-3xl xl:text-6xl font-bold text-main-700 dark:text-white">
               Conheça <b>Nosso Portfólio</b>
@@ -67,7 +67,7 @@ export default function HeroTwo() {
               type: "spring",
               delay: 0.5,
             }}
-            className="xl:1/2 p-6 flex flex-col gap-4"
+            className="xl:w-full p-6 flex flex-col gap-4"
           >
             <CardPortfolio
               image="/pokedexplore.png"
@@ -80,6 +80,12 @@ export default function HeroTwo() {
               title="Lithium BR"
               description="LithiumBR: A principal loja online para produtos Apple! Descubra a excelência em tecnologia com a garantia de qualidade e estilo."
               link="https://www.lithiumbr.com/"
+            />
+            <CardPortfolio
+              image="rayxcomercial.png"
+              title="Rayx Comercial"
+              description="Empresa do ramo de acessórios automotivos. Temos os melhores vendedores da área especializados e comprometidos com o serviço. A nossa empresa está preparada para atender clientes de médio e grande porte, oferecendo sempre uma solução inteligente e prática para o atendimento."
+              link="https://www.rayx.com.br/"
             />
           </motion.div>
         </div>
