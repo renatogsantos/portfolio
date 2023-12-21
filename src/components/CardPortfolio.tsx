@@ -20,15 +20,12 @@ export default function CardPortfolio({
     <motion.div
       initial={{ scale: 0 }}
       whileInView={{ scale: 1 }}
-      //viewport={{ once: true }}
-      transition={{ duration: 1, bounce: 0.2, type: "spring", delay: 0.5 }}
+      transition={{ douration: 1, type: "spring", bounce: 0.3 }}
+      viewport={{ once: true }}
       className="flex flex-col gap-1 relative"
     >
-      <motion.div
-        initial={{ backgroundPosition: "top center" }}
-        whileInView={{ backgroundPosition:"bottom center"}}
-        transition={{ duration: 20, delay: 2, ease: "easeInOut" }}
-        className="bg-slate-400 rounded xl:rounded-2xl aspect-video card-portfolio"
+      <div
+        className="bg-slate-400 rounded aspect-video card-portfolio"
         style={{ backgroundImage: `url(${image})` }}
       />
       <div className="flex flex-col mt-6">

@@ -42,7 +42,7 @@ export default function HeroTwo() {
               type: "spring",
               delay: 0.5,
             }}
-            className="xl:w-1/3 p-6 sticky xl:top-12 h-full"
+            className="xl:w-1/2 p-6 sticky xl:top-12 h-full"
           >
             <h2 className="text-3xl xl:text-6xl font-bold text-main-700 dark:text-white">
               Conheça <b>Nosso Portfólio</b>
@@ -67,7 +67,7 @@ export default function HeroTwo() {
               type: "spring",
               delay: 0.5,
             }}
-            className="xl:w-full p-6 flex flex-col gap-4"
+            className="xl:1/2 p-6 flex flex-col gap-4"
           >
             <CardPortfolio
               image="/pokedexplore.png"
