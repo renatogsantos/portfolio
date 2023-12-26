@@ -37,6 +37,12 @@ const config: any = {
           900: "#001731",
         },
       },
+      boxShadow: {
+        "3xl": "0px 24px 48px 0px rgba(34, 58, 81, 0.10);",
+      },
+      borderRadius: {
+        "3xl": "48px"
+      }
     },
   },
   darkMode: "class",

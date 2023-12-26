@@ -1,9 +1,12 @@
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   background: url("/bg.svg");
   background-size: contain;
   background-position: top center;
   background-repeat: no-repeat;
-  scroll-behavior: smooth;
 }
 
 .bg-home {
@@ -18,6 +21,22 @@ body {
   bottom: 0;
   right: 50%;
   transform: translateX(50%);
+  width: 90%;
+}
+
+.bg-hero-three {
+  @media screen and (min-width: 1024px) {
+    background: url("/bg-hero-three.svg");
+    background-position: -15% top;
+    background-size: 45%;
+    background-repeat: no-repeat;
+  }
+}
+
+.man-hero-three {
+  position: absolute;
+  bottom: 0;
+  right: 0;
   width: 90%;
 }
 
@@ -82,6 +101,5 @@ body {
     background-position: bottom center;
     transition: 20s ease-out;
     transform: perspective(1000px) rotateX(0);
-
   }
 }

@@ -24,7 +24,7 @@ export default function HomeSection() {
           bounce: 0.6,
           type: "spring",
         }}
-        className="container mx-auto rounded-3xl dark:bg-slate-800 bg-white lg:mt-12 xl:mt-24 shadow-lg grid lg:grid-cols-2 bg-home"
+        className="container mx-auto rounded-3xl dark:bg-slate-800 bg-white lg:mt-12 xl:mt-24 shadow-3xl grid lg:grid-cols-2 bg-home"
       >
         <div className="flex flex-col gap-6 p-8 lg:p-14 xl:p-16">
           <p className="text-main-700 dark:text-white text-1xl xl:text-2xl font-bold">

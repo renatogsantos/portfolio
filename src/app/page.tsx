@@ -1,5 +1,6 @@
 import MainNavbar from "@/components/Navbar";
 import HeroOne from "@/components/sections/HeroOne";
+import HeroThree from "@/components/sections/HeroThree";
 import HeroTwo from "@/components/sections/HeroTwo";
 import HomeSection from "@/components/sections/HomeSection";
 
@@ -8,14 +9,17 @@ export default function Home() {
     <>
       <MainNavbar />
       <main>
-        <section className="p-4">
+        <section id="home" className="p-4">
           <HomeSection />
         </section>
-        <section id="about">
+        <section id="presence">
           <HeroOne />
         </section>
-        <section id="client">
+        <section id="portfolio">
           <HeroTwo />
+        </section>
+        <section id="aboutus" className="p-4">
+          <HeroThree />
         </section>
       </main>
     </>

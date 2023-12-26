@@ -32,7 +32,7 @@ export default function MainNavbar() {
     <>
       <Navbar
         onMenuOpenChange={setIsMenuOpen}
-        shouldHideOnScroll
+        //shouldHideOnScroll
         isBordered
         maxWidth="2xl"
       >
@@ -67,55 +67,16 @@ export default function MainNavbar() {
 
         <NavbarContent className="hidden sm:flex gap-4" justify="center">
           <NavbarItem>
-            <Tooltip
-              placement="bottom"
-              showArrow={true}
-              content="Whatsapp"
-              color="primary"
-            >
-              <Link
-                href="https://api.whatsapp.com/send?phone=5511911882402&text=Ol%C3%A1%20Renato,%20pode%20me%20ajudar?"
-                target="_blank"
-                color="secondary"
-                aria-label="Whatsapp"
-              >
-                <WhatsappLogo size={24} weight="duotone" />
-              </Link>
-            </Tooltip>
+            <a href="#" className="font-medium text-main-700 dark:text-white">Início</a>
           </NavbarItem>
           <NavbarItem>
-            <Tooltip
-              placement="bottom"
-              showArrow={true}
-              content="Linkedin"
-              color="primary"
-            >
-              <Link
-                href="https://www.linkedin.com/in/renato-g-santos/"
-                target="_blank"
-                color="secondary"
-                aria-label="Linkedin"
-              >
-                <LinkedinLogo size={24} weight="duotone" />
-              </Link>
-            </Tooltip>
+            <a href="#presence" className="font-medium text-main-700 dark:text-white">Presença Online</a>
           </NavbarItem>
           <NavbarItem>
-            <Tooltip
-              placement="bottom"
-              showArrow={true}
-              content="Github"
-              color="primary"
-            >
-              <Link
-                href="https://github.com/renatogsantos"
-                target="_blank"
-                color="secondary"
-                aria-label="Github"
-              >
-                <GithubLogo size={24} weight="duotone" />
-              </Link>
-            </Tooltip>
+            <a href="#portfolio" className="font-medium text-main-700 dark:text-white">Portfólio</a>
+          </NavbarItem>
+          <NavbarItem>
+            <a href="#aboutus" className="font-medium text-main-700 dark:text-white">Sobre nós</a>
           </NavbarItem>
         </NavbarContent>
 
