@@ -18,7 +18,7 @@ export default function Home() {
         <section id="portfolio">
           <HeroTwo />
         </section>
-        <section id="aboutus" className="p-4">
+        <section id="aboutus">
           <HeroThree />
         </section>
       </main>

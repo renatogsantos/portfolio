@@ -30,7 +30,7 @@ export default function HeroThree() {
         <ParallaxText baseVelocity={-1}>SAIBA MAIS</ParallaxText>
         <ParallaxText baseVelocity={1}>STUDIO DIGITAL</ParallaxText>
       </motion.div>
-      <div className="container mx-auto">
+      <div className="container mx-auto p-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
