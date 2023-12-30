@@ -41,7 +41,7 @@ export default function HeroThree() {
             bounce: 0.6,
             type: "spring",
           }}
-          className="container mx-auto rounded-3xl dark:bg-slate-800 bg-white lg:mt-12 shadow-3xl grid lg:grid-cols-3 bg-hero-three"
+          className="container mx-auto rounded-3xl dark:bg-slate-800 bg-white lg:my-12 shadow-3xl grid lg:grid-cols-3 bg-hero-three"
         >
           <div className="relative hidden lg:flex col-span-1">
             <img
@@ -80,12 +80,6 @@ export default function HeroThree() {
               Estamos ansiosos para criar algo extraordinário para você. Vamos
               começar a construir sua presença digital de destaque!
             </p>
-            <MainButton
-              title="Entre em contato"
-              onClick={() => {
-                console.log("oi");
-              }}
-            />
           </div>
         </motion.div>
       </div>
