@@ -25,7 +25,7 @@ export default function CardPortfolio({
       className="flex flex-col gap-1 relative"
     >
       <div
-        className="bg-slate-400 rounded-md aspect-video card-portfolio"
+        className="bg-slate-400 rounded-lg aspect-video card-portfolio"
         style={{ backgroundImage: `url(${image})` }}
       />
       <div className="flex flex-col mt-6">

@@ -21,7 +21,7 @@ export default function HeroTwo() {
         exit={{ opacity: 0, y: 50 }}
         viewport={{ once: true }}
         transition={{
-          duration: .5,
+          duration: 0.5,
           bounce: 0.6,
           type: "spring",
         }}
@@ -42,19 +42,27 @@ export default function HeroTwo() {
               type: "spring",
               delay: 0.5,
             }}
-            className="xl:w-full p-6 sticky xl:top-12 h-full"
+            className="xl:w-full p-6 sticky xl:top-12 xl:h-screen"
           >
-            <h2 className="text-3xl xl:text-6xl font-bold text-main-700 dark:text-white">
-              Conheça <b>Nosso Portfólio</b>
-            </h2>
-            <p className="font-medium mt-3 hidden xl:block">
-              Descubra alguns dos projetos incríveis criados pelo Studio
-              Digital! <ArrowRight className="text-main-400" size={40} />
-            </p>
-            <p className="font-medium mt-3 xl:hidden">
-              Descubra alguns dos projetos incríveis criados pelo Studio
-              Digital! <ArrowDown className="text-main-400" size={40} />
-            </p>
+            <div className="flex flex-col justify-between xl:h-[95%]">
+              <div className="flex flex-col">
+                <h2 className="text-3xl xl:text-6xl font-bold text-main-700 dark:text-white">
+                  Conheça <b>Nosso Portfólio</b>
+                </h2>
+                <p className="font-medium mt-3">
+                  Descubra alguns dos projetos incríveis criados pelo Studio
+                  Digital!
+                </p>
+              </div>
+              <ArrowRight
+                className="text-main-400 border-3 border-main-400 rounded-full hidden xl:block"
+                size={40}
+              />
+              <ArrowDown
+                className="text-main-400 border-3 border-main-400 rounded-full xl:hidden"
+                size={40}
+              />
+            </div>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
