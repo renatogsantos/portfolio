@@ -42,9 +42,9 @@ export default function HeroTwo() {
               type: "spring",
               delay: 0.5,
             }}
-            className="xl:w-full p-6 sticky xl:top-12 xl:h-screen"
+            className="xl:w-full p-6 sticky xl:top-14 h-full"
           >
-            <div className="flex flex-col justify-between xl:h-[95%]">
+            <div className="flex flex-col justify-between gap-4">
               <div className="flex flex-col">
                 <h2 className="text-3xl xl:text-6xl font-bold text-main-700 dark:text-white">
                   Conheça <b>Nosso Portfólio</b>

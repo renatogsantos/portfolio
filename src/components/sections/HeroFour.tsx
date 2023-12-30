@@ -1,5 +1,12 @@
 "use client";
-import { Input, Link, Textarea, Tooltip } from "@nextui-org/react";
+import {
+  Input,
+  Link,
+  Select,
+  SelectItem,
+  Textarea,
+  Tooltip,
+} from "@nextui-org/react";
 import { useForm } from "react-hook-form";
 import MainButton from "../Button";
 import { motion } from "framer-motion";
@@ -14,6 +21,14 @@ export default function HeroFour() {
     clearErrors,
     formState: { errors },
   } = useForm();
+
+  const howDoYouFoundUs = [
+    { id: 1, label: "Google" },
+    { id: 2, label: "Facebook" },
+    { id: 3, label: "Instagram" },
+    { id: 4, label: "Twitter" },
+    { id: 5, label: "Linkedin" },
+  ];
 
   const sendForm = (data: any) => {
     console.log(data);
@@ -48,7 +63,7 @@ export default function HeroFour() {
         }}
         className="container mx-auto p-4 lg:mt-12"
       >
-        <div className="grid xl:grid-cols-2">
+        <div className="grid xl:grid-cols-2 gap-4">
           <div className="flex flex-col gap-6">
             <h2 className="text-3xl xl:text-4xl font-bold text-main-700 dark:text-white">
               Entre em contato
@@ -113,27 +128,52 @@ export default function HeroFour() {
               <div className="flex flex-col gap-4">
                 <Input
                   type="email"
-                  label="Email"
+                  label="Seu melhor Email"
                   variant="bordered"
                   isInvalid={errors.email ? true : false}
                   color={errors.email ? "danger" : "secondary"}
+                  className="w-full"
                   errorMessage={
                     errors.email && "Por favor insira um e-mail válido"
                   }
                   {...register("email", { required: true })}
-                  className="w-full"
                 />
+                <Input
+                  type="tel"
+                  label="Telefone Whatsapp"
+                  variant="bordered"
+                  isInvalid={errors.telefone ? true : false}
+                  color={errors.telefone ? "danger" : "secondary"}
+                  className="w-full"
+                  errorMessage={
+                    errors.telefone && "Por favor insira um telefone válido"
+                  }
+                  {...register("telefone", { required: true })}
+                  />
+                <Select
+                  items={howDoYouFoundUs}
+                  label="Como nos encontrou?"
+                  variant="bordered"
+                  isInvalid={errors.comoNosAchou ? true : false}
+                  color={errors.comoNosAchou ? "danger" : "secondary"}
+                  className="w-full"
+                  {...register("comoNosAchou", { required: true })}
+                >
+                  {(item) => (
+                    <SelectItem key={item.id}>{item.label}</SelectItem>
+                  )}
+                </Select>
                 <Textarea
                   type="text"
-                  label="Mensagem"
+                  label="Deixe sua mensagem"
                   variant="bordered"
                   isInvalid={errors.mensagem ? true : false}
                   color={errors.mensagem ? "danger" : "secondary"}
+                  className="w-full"
                   errorMessage={
                     errors.mensagem && "Por favor insira uma mensagem válida"
                   }
                   {...register("mensagem", { required: true })}
-                  className="w-full"
                 />
                 <MainButton
                   typeButton="submit"
