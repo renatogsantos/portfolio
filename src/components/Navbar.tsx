@@ -78,6 +78,9 @@ export default function MainNavbar() {
           <NavbarItem>
             <a href="#aboutus" className="font-medium text-main-700 dark:text-white">Sobre nós</a>
           </NavbarItem>
+          <NavbarItem>
+            <a href="#contact" className="font-medium text-main-700 dark:text-white">Contato</a>
+          </NavbarItem>
         </NavbarContent>
 
         <NavbarContent justify="end" className="gap-2">
