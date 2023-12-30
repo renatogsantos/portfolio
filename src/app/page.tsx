@@ -1,4 +1,5 @@
 import MainNavbar from "@/components/Navbar";
+import HeroFour from "@/components/sections/HeroFour";
 import HeroOne from "@/components/sections/HeroOne";
 import HeroThree from "@/components/sections/HeroThree";
 import HeroTwo from "@/components/sections/HeroTwo";
@@ -20,6 +21,9 @@ export default function Home() {
         </section>
         <section id="aboutus">
           <HeroThree />
+        </section>
+        <section id="contact">
+          <HeroFour />
         </section>
       </main>
     </>

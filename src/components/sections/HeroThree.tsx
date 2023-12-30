@@ -47,11 +47,14 @@ export default function HeroThree() {
             <img
               draggable={false}
               src="/man-about-us.png"
-              alt="Homem gritando"
+              alt="Homem sorrindo"
               className="man-hero-three"
             />
           </div>
           <div className="flex flex-col gap-6 p-8 lg:p-14 xl:p-16 col-span-2">
+            <h2 className="text-3xl xl:text-4xl font-bold text-main-700 dark:text-white">
+              Studio Digital
+            </h2>
             <p className="font-medium">
               Bem-vindo ao Studio Digital, seu destino definitivo para serviços
               de desenvolvimento e design que transformam visões em realidade

@@ -29,7 +29,7 @@ body {
 .bg-hero-three {
   @media screen and (min-width: 1024px) {
     background: url("/bg-hero-three.svg"), #fff;
-    background-position: -15% top;
+    background-position: -15% bottom;
     background-size: 45%;
     background-repeat: no-repeat;
   }
