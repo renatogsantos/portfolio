@@ -19,7 +19,7 @@ export default function Home() {
         <section id="aboutus">
           <HeroThree />
         </section>
-        <section id="portfolio">
+        <section id="showcase">
           <HeroTwo />
         </section>
         <section id="contact">

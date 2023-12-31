@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 import ParallaxText from "../ParallaxText";
 import { ArrowDown, ArrowRight } from "@phosphor-icons/react";
 import dynamic from "next/dynamic";
-import { Skeleton } from "@nextui-org/react";
+import { Avatar, AvatarGroup, Skeleton } from "@nextui-org/react";
+import { useState } from "react";
 const CardPortfolio = dynamic(() => import("../CardPortfolio"), {
   loading: () => (
     <Skeleton className="rounded-lg">
@@ -13,6 +14,8 @@ const CardPortfolio = dynamic(() => import("../CardPortfolio"), {
 });
 
 export default function HeroTwo() {
+  const [comment, setComment] = useState(1);
+
   return (
     <>
       <motion.div
@@ -47,21 +50,97 @@ export default function HeroTwo() {
             <div className="flex flex-col justify-between gap-4">
               <div className="flex flex-col">
                 <h2 className="text-3xl xl:text-6xl font-bold text-main-700 dark:text-white">
-                  Conheça <b>Nosso Portfólio</b>
+                  Explorando a <b>Criatividade</b>
                 </h2>
                 <p className="font-medium mt-3">
-                  Descubra alguns dos projetos incríveis criados pelo Studio
-                  Digital!
+                  Um Showcase de Inovação e Inspiração Digital
                 </p>
               </div>
-              <ArrowRight
-                className="text-main-400 border-3 border-main-400 rounded-full hidden xl:block"
-                size={40}
-              />
-              <ArrowDown
-                className="text-main-400 border-3 border-main-400 rounded-full xl:hidden"
-                size={40}
-              />
+              <div className="flex flex-col gap-4 items-start">
+                <AvatarGroup isBordered color="success">
+                  <Avatar
+                    onMouseEnter={() => {
+                      setComment(1);
+                    }}
+                    src="https://i.pravatar.cc/150?u=a04258114e29026702d"
+                  />
+                  <Avatar
+                    onMouseEnter={() => {
+                      setComment(2);
+                    }}
+                    src="https://i.pravatar.cc/150?u=a04258a2462d826712d"
+                  />
+                  <Avatar
+                    onMouseEnter={() => {
+                      setComment(3);
+                    }}
+                    src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
+                  />
+                </AvatarGroup>
+                {comment == 1 && (
+                  <motion.p
+                    initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: 50 }}
+                    viewport={{ once: true }}
+                    transition={{
+                      duration: 1,
+                      bounce: 0.6,
+                      type: "spring",
+                    }}
+                    className="font-medium text-main-700 dark:text-white"
+                  >
+                    Studio Digital, vocês são simplesmente demais! 🚀 Os designs
+                    são tipo um "show à parte" - super modernos e cativantes!
+                    Meu site nunca esteve tão estiloso e intuitivo. 🎨💻 Além
+                    disso, a galera lá é tão descolada, sempre antenada nas
+                    últimas tendências digitais. Recomendo de olhos fechados
+                    para quem curte inovação com um toque de estilo!
+                  </motion.p>
+                )}
+                {comment == 2 && (
+                  <motion.p
+                    initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: 50 }}
+                    viewport={{ once: true }}
+                    transition={{
+                      duration: 1,
+                      bounce: 0.6,
+                      type: "spring",
+                    }}
+                    className="font-medium text-main-700 dark:text-white"
+                  >
+                    Mano, sério, Studio Digital é on point! 🌐💯 Os caras
+                    entendem de tecnologia como ninguém, e o jeito como eles
+                    equilibram funcionalidade com aquele visual top é coisa de
+                    outro mundo. Meu site tá bombando graças a esses gênios
+                    digitais. 🚀 Se você quer lacrar na web, não pensa duas
+                    vezes, manda ver com o Studio Digital!
+                  </motion.p>
+                )}
+                {comment == 3 && (
+                  <motion.p
+                    initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: 50 }}
+                    viewport={{ once: true }}
+                    transition={{
+                      duration: 1,
+                      bounce: 0.6,
+                      type: "spring",
+                    }}
+                    className="font-medium text-main-700 dark:text-white"
+                  >
+                    Studio Digital é vida, pessoal! 🌈💻 A vibe deles é tão
+                    positiva e criativa que parece que meu site ganhou um
+                    upgrade de felicidade. A equipe é supercool e sempre
+                    disposta a entender minhas ideias malucas. 😜 Se você quer
+                    um toque jovem e inovador pro seu negócio online, vai de
+                    Studio Digital que é sucesso garantido! ✨
+                  </motion.p>
+                )}
+              </div>
             </div>
           </motion.div>
           <motion.div

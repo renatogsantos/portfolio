@@ -91,7 +91,7 @@ export default function HomeSection() {
         className="container mx-auto p-4 flex justify-center lg:justify-between"
       >
         <span className="text-main-700 dark:text-white font-medium hidden lg:flex">
-          Conheça mais sobre o StudioDigital
+          Conheça mais sobre o <b>Studio Digital</b>
         </span>
         <div className="flex items-center gap-4">
           <Tooltip

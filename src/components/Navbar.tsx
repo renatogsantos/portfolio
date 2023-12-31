@@ -89,10 +89,10 @@ export default function MainNavbar() {
           </NavbarItem>
           <NavbarItem>
             <a
-              href="#portfolio"
+              href="#showcase"
               className="font-medium text-main-700 dark:text-white"
             >
-              Portfólio
+              Showcase
             </a>
           </NavbarItem>
           <NavbarItem>

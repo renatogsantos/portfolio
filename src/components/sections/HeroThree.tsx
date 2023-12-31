@@ -53,32 +53,23 @@ export default function HeroThree() {
           </div>
           <div className="flex flex-col gap-6 p-8 lg:p-14 xl:p-16 col-span-2">
             <h2 className="text-3xl xl:text-4xl font-bold text-main-700 dark:text-white">
-              Studio Digital
+              Studio <span className="text-main-100">Digital</span>
             </h2>
             <p className="font-medium text-main-700 dark:text-white">
-              Bem-vindo ao Studio Digital, seu destino definitivo para serviços
-              de desenvolvimento e design que transformam visões em realidade
-              digital. Nossa equipe dedicada de especialistas une paixão e
-              expertise para criar experiências online extraordinárias. Em um
-              mundo cada vez mais digital, reconhecemos a importância de
-              destacar sua presença na web. Do desenvolvimento de sites
-              intuitivos à criação de identidades visuais marcantes, estamos
-              comprometidos em elevar sua presença online a novos patamares.
+              No Studio Digital, vamos além na transformação de empresas por
+              meio de soluções digitais inovadoras. Nossos designs envolventes
+              não apenas aprimoram a interação do usuário, mas também criam
+              experiências memoráveis que ressoam em todas as fases da jornada
+              do cliente. Fundamentados em uma abordagem centrada no usuário,
+              dedicamos tempo à pesquisa detalhada e adotamos um processo de
+              desenvolvimento sólido, garantindo conquistas impactantes que
+              impulsionam o sucesso de nossos clientes.
             </p>
-            <p className="font-medium text-main-700 dark:text-white hidden 2xl:flex">
-              No Studio Digital, não apenas construímos websites e designs, mas
-              também cultivamos parcerias duradouras. Combinando nossa expertise
-              técnica com uma abordagem centrada no cliente, trabalhamos em
-              colaboração para alcançar seus objetivos e superar expectativas.
-              Seja você um empreendedor visionário, uma startup ambiciosa ou uma
-              empresa consolidada em busca de renovação, estamos prontos para
-              embarcar nessa jornada digital ao seu lado.
-            </p>
-            <p className="font-medium text-main-700 dark:text-white hidden 2xl:flex">
-              Transforme suas ideias em realidade conosco no Studio Digital,
-              onde a inovação encontra o design, e o futuro ganha vida online.
-              Estamos ansiosos para criar algo extraordinário para você. Vamos
-              começar a construir sua presença digital de destaque!
+            <p className="font-medium text-main-700 dark:text-white">
+              Se você busca ir além na presença online, convidamos você a se
+              conectar conosco no Studio Digital. Juntos, exploraremos novas
+              fronteiras digitais para elevar o status da sua empresa e destacar
+              sua marca em um cenário cada vez mais competitivo.
             </p>
           </div>
         </motion.div>
