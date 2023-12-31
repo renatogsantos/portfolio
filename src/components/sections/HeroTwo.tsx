@@ -91,7 +91,7 @@ export default function HeroTwo() {
                     className="font-medium text-main-700 dark:text-white"
                   >
                     Studio Digital, vocês são simplesmente demais! 🚀 Os designs
-                    são tipo um "show à parte" - super modernos e cativantes!
+                    são tipo um &quotshow à parte&quot - super modernos e cativantes!
                     Meu site nunca esteve tão estiloso e intuitivo. 🎨💻 Além
                     disso, a galera lá é tão descolada, sempre antenada nas
                     últimas tendências digitais. Recomendo de olhos fechados
