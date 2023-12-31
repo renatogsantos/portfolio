@@ -40,7 +40,7 @@ export default function CardText({ icon, title, description }: CardProps) {
         <h3 className="text-2xl lg:text-3xl font-bold text-main-700 dark:text-white">
           {title}
         </h3>
-        <p className="text-sm">{description}</p>
+        <p className="text-medium">{description}</p>
       </motion.div>
     </>
   );

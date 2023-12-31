@@ -27,12 +27,12 @@ import {
 export default function MainNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
-
+  
   return (
     <>
       <Navbar
         onMenuOpenChange={setIsMenuOpen}
-        //shouldHideOnScroll
+        shouldHideOnScroll
         isBordered
         maxWidth="2xl"
       >

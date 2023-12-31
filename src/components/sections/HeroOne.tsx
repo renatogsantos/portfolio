@@ -50,7 +50,7 @@ export default function HeroOne() {
             className="xl:w-full p-6"
           >
             <h2 className="text-3xl xl:text-6xl font-bold text-main-700 dark:text-white">
-              Transforme sua <b>Presença Online</b>
+              Transforme sua <b><span className="hover:text-main-300 transition-colors ease-in-out">Presença Online</span></b>
             </h2>
             <p className="font-medium mt-3">
               Bem-vindo ao <b>Studio Digital</b>, onde a inovação encontra o

@@ -14,8 +14,10 @@ import ParallaxText from "../ParallaxText";
 import { GithubLogo, LinkedinLogo, WhatsappLogo } from "@phosphor-icons/react";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
+import { Loading, Notify } from "notiflix";
 
 type EmailSend = {
+  nomeCompleto: string;
   email: string;
   telefone: string;
   comoEncontrou: string;
@@ -45,6 +47,7 @@ export default function HeroFour() {
   ];
 
   const EnviaContato: SubmitHandler<EmailSend> = (data) => {
+    Loading.circle({ svgColor: "#6401FF" });
     const form = formRef.current;
 
     if (form) {
@@ -52,11 +55,20 @@ export default function HeroFour() {
         .sendForm(EmailServiceID, EmailTemplateID, form, EmailPublicKey)
         .then((response) => {
           console.log(response);
+          Notify.success(
+            `Olá ${data.nomeCompleto}, sua mensagem foi recebida com sucesso!`,
+            {
+              position: "center-bottom",
+              success: { background: "#6401FF", textColor: "#fff" },
+            }
+          );
         })
         .catch((error) => {
           console.log(error);
         })
-        .finally(() => {});
+        .finally(() => {
+          Loading.remove();
+        });
 
       reset();
       clearErrors();
@@ -154,6 +166,18 @@ export default function HeroFour() {
           <div>
             <form ref={formRef} onSubmit={handleSubmit(EnviaContato)}>
               <div className="flex flex-col gap-4">
+                <Input
+                  type="text"
+                  label="Nome completo"
+                  variant="bordered"
+                  isInvalid={errors.nomeCompleto ? true : false}
+                  color={errors.nomeCompleto ? "danger" : "secondary"}
+                  className="w-full"
+                  errorMessage={
+                    errors.nomeCompleto && "Por favor insira um nome"
+                  }
+                  {...register("nomeCompleto", { required: true })}
+                />
                 <Input
                   type="email"
                   label="Seu melhor Email"
