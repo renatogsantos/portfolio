@@ -67,19 +67,41 @@ export default function MainNavbar() {
 
         <NavbarContent className="hidden sm:flex gap-4" justify="center">
           <NavbarItem>
-            <a href="#" className="font-medium text-main-700 dark:text-white">Início</a>
+            <a href="#" className="font-medium text-main-700 dark:text-white">
+              Início
+            </a>
           </NavbarItem>
           <NavbarItem>
-            <a href="#presence" className="font-medium text-main-700 dark:text-white">Presença Online</a>
+            <a
+              href="#presence"
+              className="font-medium text-main-700 dark:text-white"
+            >
+              Presença Online
+            </a>
           </NavbarItem>
           <NavbarItem>
-            <a href="#portfolio" className="font-medium text-main-700 dark:text-white">Portfólio</a>
+            <a
+              href="#aboutus"
+              className="font-medium text-main-700 dark:text-white"
+            >
+              Sobre nós
+            </a>
           </NavbarItem>
           <NavbarItem>
-            <a href="#aboutus" className="font-medium text-main-700 dark:text-white">Sobre nós</a>
+            <a
+              href="#portfolio"
+              className="font-medium text-main-700 dark:text-white"
+            >
+              Portfólio
+            </a>
           </NavbarItem>
           <NavbarItem>
-            <a href="#contact" className="font-medium text-main-700 dark:text-white">Contato</a>
+            <a
+              href="#contact"
+              className="font-medium text-main-700 dark:text-white"
+            >
+              Contato
+            </a>
           </NavbarItem>
         </NavbarContent>
 
