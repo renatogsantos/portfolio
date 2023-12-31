@@ -41,6 +41,7 @@ export default function HomeSection() {
             Seu sucesso é nossa missão
           </p>
           <MainButton
+            icon={null}
             typeButton="button"
             title="Entre em contato"
             onClick={() => {
