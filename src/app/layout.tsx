@@ -3,6 +3,7 @@ import { Montserrat } from "next/font/google";
 import "../styles/globals.scss";
 import "./globals.css";
 import { Providers } from "./providers";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const fontFamily = Montserrat({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body suppressHydrationWarning className={fontFamily.className}>
         <Providers>{children}</Providers>
+        <SpeedInsights />
       </body>
     </html>
   );
