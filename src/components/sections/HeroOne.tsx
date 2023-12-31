@@ -57,7 +57,7 @@ export default function HeroOne() {
                 </span>
               </b>
             </h2>
-            <p className="font-medium text-4xl text-main-700 dark:text-white mt-3">
+            <p className="font-medium lg:text-4xl text-main-700 dark:text-white mt-3">
               Bem-vindo ao <b>Studio Digital</b>, onde a <b>inovação</b>{" "}
               encontra o <b>design</b> e a <b>experiência digital</b> ganha
               vida!

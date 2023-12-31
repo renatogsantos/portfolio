@@ -26,12 +26,11 @@ export default function CardText({ icon, title, description }: CardProps) {
         <motion.div
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
-          viewport={{ once: true }}
           transition={{
             duration: 1,
             bounce: 0.6,
             type: "spring",
-            delay: 0.5,
+            delay: 0.2,
           }}
           className="card-icon"
         >

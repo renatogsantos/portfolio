@@ -12,7 +12,7 @@ body {
 }
 
 .bg-home {
-  background: url("/background-home.png"), #fff;
+  background: url("/background-home.png"), #f9fcff;
   background-position: left bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -28,7 +28,7 @@ body {
 
 .bg-hero-three {
   @media screen and (min-width: 1024px) {
-    background: url("/bg-hero-three.svg"), #fff;
+    background: url("/bg-hero-three.svg"), #f9fcff;
     background-position: -15% top;
     background-size: 45%;
     background-repeat: no-repeat;

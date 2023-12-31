@@ -14,6 +14,7 @@ import ParallaxText from "../ParallaxText";
 import {
   GithubLogo,
   LinkedinLogo,
+  PaperPlaneTilt,
   RocketLaunch,
   WhatsappLogo,
 } from "@phosphor-icons/react";
@@ -173,6 +174,15 @@ export default function HeroFour() {
                 </Link>
               </Tooltip>
             </div>
+            <span className="font-medium text-main-700 dark:text-white">
+              Prefere uma reunião?{" "}
+              <Link
+                href="https://calendar.app.google/7ZiptucnE3S7YABH7"
+                target="_blank"
+              >
+                Agende agora
+              </Link>
+            </span>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -252,8 +262,9 @@ export default function HeroFour() {
                   {...register("mensagem", { required: true })}
                 />
                 <MainButton
+                  icon={<PaperPlaneTilt size={24} weight="duotone" />}
                   typeButton="submit"
-                  title="Enviar"
+                  title="Enviar Mensagem"
                   onClick={() => {}}
                 />
               </div>

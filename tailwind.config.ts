@@ -12,8 +12,8 @@ const config: any = {
   theme: {
     extend: {
       colors: {
-        white: "#FFFFFF",
-        black: "#000000",
+        white: "#f9fcff",
+        black: "#13161F",
         danger: "#f02d3a",
         main: {
           100: "#ff3600",
@@ -57,14 +57,14 @@ const config: any = {
         light: {
           layout: {}, // light theme layout tokens
           colors: {
-            background: "#f5f5f5", // or DEFAULT
+            background: "#f9fcff", // or DEFAULT
             foreground: "#13161F", // or 50 to 900 DEFAULT
             primary: {
-              foreground: "#FFFFFF",
+              foreground: "#f9fcff",
               DEFAULT: "#FF3600",
             },
             secondary: {
-              foreground: "#FFFFFF",
+              foreground: "#f9fcff",
               DEFAULT: "#3B445B",
             },
           }, // light theme colors
@@ -73,15 +73,15 @@ const config: any = {
           layout: {}, // dark theme layout tokens
           colors: {
             background: "#13161F", // or DEFAULT
-            foreground: "#ECEDEE", // or 50 to 900 DEFAULT
+            foreground: "#f9fcff", // or 50 to 900 DEFAULT
             primary: {
               //... 50 to 900
-              foreground: "#FFFFFF",
+              foreground: "#f9fcff",
               DEFAULT: "#FF3600",
             },
             secondary: {
-              foreground: "#FFFFFF",
-              DEFAULT: "#f5f5f5",
+              foreground: "#f9fcff",
+              DEFAULT: "#f9fcff",
             },
           }, // dark theme colors
         },
