@@ -86,6 +86,13 @@ export default function HeroTwo() {
                       setComment(4);
                     }}
                   />
+                  <Avatar
+                    color={comment == 5 ? "success" : "default"}
+                    src="/perfil-rayx.png"
+                    onMouseEnter={() => {
+                      setComment(5);
+                    }}
+                  />
                 </AvatarGroup>
                 {comment == 1 && (
                   <motion.p
@@ -170,6 +177,30 @@ export default function HeroTwo() {
                     disposta a entender minhas ideias malucas. 😜 Se você quer
                     um toque jovem e inovador pro seu negócio online, vai de
                     Studio Digital que é sucesso garantido! ✨
+                  </motion.p>
+                )}
+                {comment == 5 && (
+                  <motion.p
+                    initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: 50 }}
+                    viewport={{ once: true }}
+                    transition={{
+                      duration: 1,
+                      bounce: 0.6,
+                      type: "spring",
+                    }}
+                    className="font-medium text-main-700 dark:text-white"
+                  >
+                    Graças ao Studio Digital, a Rayx Comercial agora se destaca
+                    online com um website otimizado e presença estratégica nas
+                    redes sociais. A parceria transformou nossa abordagem em
+                    acessórios automotivos, oferecendo soluções inteligentes
+                    para clientes de médio e grande porte. A equipe altamente
+                    dedicada do Studio Digital redefiniu nossa presença digital,
+                    proporcionando uma experiência única no setor. Estamos
+                    entusiasmados com o sucesso que essa colaboração trouxe à
+                    Rayx Comercial!
                   </motion.p>
                 )}
               </div>
