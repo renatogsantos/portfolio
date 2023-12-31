@@ -4,7 +4,7 @@ import ParallaxText from "../ParallaxText";
 import { ArrowDown, ArrowRight } from "@phosphor-icons/react";
 import dynamic from "next/dynamic";
 import { Avatar, AvatarGroup, Skeleton } from "@nextui-org/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 const CardPortfolio = dynamic(() => import("../CardPortfolio"), {
   loading: () => (
     <Skeleton className="rounded-lg">
@@ -15,6 +15,22 @@ const CardPortfolio = dynamic(() => import("../CardPortfolio"), {
 
 export default function HeroTwo() {
   const [comment, setComment] = useState(1);
+
+  useEffect(() => {
+    if (comment == 1) {
+      setTimeout(() => {
+        setComment(2);
+      }, 5000);
+    } else if (comment == 2) {
+      setTimeout(() => {
+        setComment(3);
+      }, 5000);
+    } else if (comment == 3) {
+      setTimeout(() => {
+        setComment(1);
+      }, 5000);
+    }
+  });
 
   return (
     <>
@@ -57,23 +73,17 @@ export default function HeroTwo() {
                 </p>
               </div>
               <div className="flex flex-col gap-4 items-start">
-                <AvatarGroup isBordered color="success">
+                <AvatarGroup isBordered>
                   <Avatar
-                    onMouseEnter={() => {
-                      setComment(1);
-                    }}
+                    color={comment == 1 ? "success" : "default"}
                     src="https://i.pravatar.cc/150?u=a04258114e29026702d"
                   />
                   <Avatar
-                    onMouseEnter={() => {
-                      setComment(2);
-                    }}
+                    color={comment == 2 ? "success" : "default"}
                     src="https://i.pravatar.cc/150?u=a04258a2462d826712d"
                   />
                   <Avatar
-                    onMouseEnter={() => {
-                      setComment(3);
-                    }}
+                    color={comment == 3 ? "success" : "default"}
                     src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
                   />
                 </AvatarGroup>
@@ -91,11 +101,11 @@ export default function HeroTwo() {
                     className="font-medium text-main-700 dark:text-white"
                   >
                     Studio Digital, vocês são simplesmente demais! 🚀 Os designs
-                    são tipo um &quotshow à parte&quot - super modernos e cativantes!
-                    Meu site nunca esteve tão estiloso e intuitivo. 🎨💻 Além
-                    disso, a galera lá é tão descolada, sempre antenada nas
-                    últimas tendências digitais. Recomendo de olhos fechados
-                    para quem curte inovação com um toque de estilo!
+                    são tipo um &rdquo;show à parte&rdquo; - super modernos e
+                    cativantes! Meu site nunca esteve tão estiloso e intuitivo.
+                    🎨💻 Além disso, a galera lá é tão descolada, sempre
+                    antenada nas últimas tendências digitais. Recomendo de olhos
+                    fechados para quem curte inovação com um toque de estilo!
                   </motion.p>
                 )}
                 {comment == 2 && (
