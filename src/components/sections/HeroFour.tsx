@@ -7,34 +7,62 @@ import {
   Textarea,
   Tooltip,
 } from "@nextui-org/react";
-import { useForm } from "react-hook-form";
+import { SubmitHandler, useForm } from "react-hook-form";
 import MainButton from "../Button";
 import { motion } from "framer-motion";
 import ParallaxText from "../ParallaxText";
 import { GithubLogo, LinkedinLogo, WhatsappLogo } from "@phosphor-icons/react";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
+
+type EmailSend = {
+  email: string;
+  telefone: string;
+  comoEncontrou: string;
+  mensagem: string;
+};
 
 export default function HeroFour() {
+  const EmailServiceID: any = process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID;
+  const EmailTemplateID: any = process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID;
+  const EmailPublicKey: any = process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY;
+  const formRef = useRef<HTMLFormElement>(null);
+
   const {
     register,
     handleSubmit,
     reset,
     clearErrors,
     formState: { errors },
-  } = useForm();
+  } = useForm<EmailSend>();
 
   const howDoYouFoundUs = [
-    { id: 1, label: "Google" },
-    { id: 2, label: "Facebook" },
-    { id: 3, label: "Instagram" },
-    { id: 4, label: "Twitter" },
-    { id: 5, label: "Linkedin" },
+    { label: "Google" },
+    { label: "Facebook" },
+    { label: "Instagram" },
+    { label: "Twitter" },
+    { label: "Linkedin" },
   ];
 
-  const sendForm = (data: any) => {
-    console.log(data);
-    reset();
-    clearErrors();
+  const EnviaContato: SubmitHandler<EmailSend> = (data) => {
+    const form = formRef.current;
+
+    if (form) {
+      emailjs
+        .sendForm(EmailServiceID, EmailTemplateID, form, EmailPublicKey)
+        .then((response) => {
+          console.log(response);
+        })
+        .catch((error) => {
+          console.log(error);
+        })
+        .finally(() => {});
+
+      reset();
+      clearErrors();
+    }
   };
+
   return (
     <>
       <motion.div
@@ -124,7 +152,7 @@ export default function HeroFour() {
             </div>
           </div>
           <div>
-            <form onSubmit={handleSubmit(sendForm)}>
+            <form ref={formRef} onSubmit={handleSubmit(EnviaContato)}>
               <div className="flex flex-col gap-4">
                 <Input
                   type="email"
@@ -149,18 +177,20 @@ export default function HeroFour() {
                     errors.telefone && "Por favor insira um telefone válido"
                   }
                   {...register("telefone", { required: true })}
-                  />
+                />
                 <Select
                   items={howDoYouFoundUs}
                   label="Como nos encontrou?"
                   variant="bordered"
-                  isInvalid={errors.comoNosAchou ? true : false}
-                  color={errors.comoNosAchou ? "danger" : "secondary"}
+                  isInvalid={errors.comoEncontrou ? true : false}
+                  color={errors.comoEncontrou ? "danger" : "secondary"}
                   className="w-full"
-                  {...register("comoNosAchou", { required: true })}
+                  {...register("comoEncontrou", { required: true })}
                 >
                   {(item) => (
-                    <SelectItem key={item.id}>{item.label}</SelectItem>
+                    <SelectItem key={item.label} value={item.label}>
+                      {item.label}
+                    </SelectItem>
                   )}
                 </Select>
                 <Textarea
