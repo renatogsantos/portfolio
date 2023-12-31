@@ -50,13 +50,19 @@ export default function HeroOne() {
             className="xl:w-full p-6"
           >
             <h2 className="text-3xl xl:text-6xl font-bold text-main-700 dark:text-white">
-              Transforme sua <b><span className="hover:text-main-300 transition-colors ease-in-out">Presença Online</span></b>
+              Transforme sua{" "}
+              <b>
+                <span className="hover:text-main-300 transition-colors ease-in-out">
+                  Presença Online
+                </span>
+              </b>
             </h2>
-            <p className="font-medium mt-3">
-              Bem-vindo ao <b>Studio Digital</b>, onde a inovação encontra o
-              design e a experiência digital ganha vida!
+            <p className="font-medium text-4xl text-main-700 dark:text-white mt-3">
+              Bem-vindo ao <b>Studio Digital</b>, onde a <b>inovação</b>{" "}
+              encontra o <b>design</b> e a <b>experiência digital</b> ganha
+              vida!
             </p>
-            <p className="font-medium mt-3">
+            <p className="font-medium text-main-700 dark:text-white mt-3">
               Descubra o potencial ilimitado da sua presença online através do
               nosso expertise em Design UX/UI e Desenvolvimento Web com
               tecnologias avançadas como Next.js, Tailwindcss e Typescript.

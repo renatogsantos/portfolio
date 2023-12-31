@@ -11,7 +11,12 @@ import { SubmitHandler, useForm } from "react-hook-form";
 import MainButton from "../Button";
 import { motion } from "framer-motion";
 import ParallaxText from "../ParallaxText";
-import { GithubLogo, LinkedinLogo, WhatsappLogo } from "@phosphor-icons/react";
+import {
+  GithubLogo,
+  LinkedinLogo,
+  RocketLaunch,
+  WhatsappLogo,
+} from "@phosphor-icons/react";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import { Loading, Notify } from "notiflix";
@@ -91,24 +96,30 @@ export default function HeroFour() {
         <ParallaxText baseVelocity={1}>ENTRE EM</ParallaxText>
         <ParallaxText baseVelocity={-1}>CONTATO</ParallaxText>
       </motion.div>
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: 50 }}
-        viewport={{ once: true }}
-        transition={{
-          duration: 1,
-          bounce: 0.6,
-          type: "spring",
-        }}
-        className="container mx-auto p-4 lg:mt-12"
-      >
+      <div className="container mx-auto p-4 lg:mt-12">
         <div className="grid xl:grid-cols-2 gap-4">
-          <div className="flex flex-col gap-6">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 50 }}
+            viewport={{ once: true }}
+            transition={{
+              duration: 1,
+              bounce: 0.6,
+              type: "spring",
+              delay: 0.5,
+            }}
+            className="flex flex-col gap-6"
+          >
+            <RocketLaunch
+              size={64}
+              weight="duotone"
+              className="text-main-700 dark:text-white"
+            />
             <h2 className="text-3xl xl:text-4xl font-bold text-main-700 dark:text-white">
-              Entre em contato
+              Conecte-se conosco para explorar oportunidades incríveis!
             </h2>
-            <p className="font-medium">
+            <p className="font-medium text-main-700 dark:text-white">
               Pronto para iniciar sua jornada digital? Entre em contato conosco
               para uma consulta inicial. Estamos aqui para ouvir suas ideias,
               entender suas necessidades e transformar seus objetivos em
@@ -162,8 +173,19 @@ export default function HeroFour() {
                 </Link>
               </Tooltip>
             </div>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 50 }}
+            viewport={{ once: true }}
+            transition={{
+              duration: 1,
+              bounce: 0.6,
+              type: "spring",
+              delay: 0.5,
+            }}
+          >
             <form ref={formRef} onSubmit={handleSubmit(EnviaContato)}>
               <div className="flex flex-col gap-4">
                 <Input
@@ -236,9 +258,9 @@ export default function HeroFour() {
                 />
               </div>
             </form>
-          </div>
+          </motion.div>
         </div>
-      </motion.div>
+      </div>
     </>
   );
 }

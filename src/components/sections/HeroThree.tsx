@@ -55,7 +55,7 @@ export default function HeroThree() {
             <h2 className="text-3xl xl:text-4xl font-bold text-main-700 dark:text-white">
               Studio Digital
             </h2>
-            <p className="font-medium">
+            <p className="font-medium text-main-700 dark:text-white">
               Bem-vindo ao Studio Digital, seu destino definitivo para serviços
               de desenvolvimento e design que transformam visões em realidade
               digital. Nossa equipe dedicada de especialistas une paixão e
@@ -65,7 +65,7 @@ export default function HeroThree() {
               intuitivos à criação de identidades visuais marcantes, estamos
               comprometidos em elevar sua presença online a novos patamares.
             </p>
-            <p className="font-medium hidden 2xl:flex">
+            <p className="font-medium text-main-700 dark:text-white hidden 2xl:flex">
               No Studio Digital, não apenas construímos websites e designs, mas
               também cultivamos parcerias duradouras. Combinando nossa expertise
               técnica com uma abordagem centrada no cliente, trabalhamos em
@@ -74,7 +74,7 @@ export default function HeroThree() {
               empresa consolidada em busca de renovação, estamos prontos para
               embarcar nessa jornada digital ao seu lado.
             </p>
-            <p className="font-medium hidden 2xl:flex">
+            <p className="font-medium text-main-700 dark:text-white hidden 2xl:flex">
               Transforme suas ideias em realidade conosco no Studio Digital,
               onde a inovação encontra o design, e o futuro ganha vida online.
               Estamos ansiosos para criar algo extraordinário para você. Vamos
