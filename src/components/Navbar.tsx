@@ -32,7 +32,6 @@ export default function MainNavbar() {
     <>
       <Navbar
         onMenuOpenChange={setIsMenuOpen}
-        shouldHideOnScroll
         isBordered
         maxWidth="2xl"
       >

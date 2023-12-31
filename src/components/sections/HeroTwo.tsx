@@ -16,22 +16,6 @@ const CardPortfolio = dynamic(() => import("../CardPortfolio"), {
 export default function HeroTwo() {
   const [comment, setComment] = useState(1);
 
-  useEffect(() => {
-    if (comment == 1) {
-      setTimeout(() => {
-        setComment(2);
-      }, 5000);
-    } else if (comment == 2) {
-      setTimeout(() => {
-        setComment(3);
-      }, 5000);
-    } else if (comment == 3) {
-      setTimeout(() => {
-        setComment(1);
-      }, 5000);
-    }
-  });
-
   return (
     <>
       <motion.div
@@ -76,18 +60,56 @@ export default function HeroTwo() {
                 <AvatarGroup isBordered>
                   <Avatar
                     color={comment == 1 ? "success" : "default"}
-                    src="https://i.pravatar.cc/150?u=a04258114e29026702d"
+                    src="/vitor.png"
+                    onMouseEnter={() => {
+                      setComment(1);
+                    }}
                   />
                   <Avatar
                     color={comment == 2 ? "success" : "default"}
-                    src="https://i.pravatar.cc/150?u=a04258a2462d826712d"
+                    src="https://i.pravatar.cc/150?u=a04258114e29026702d"
+                    onMouseEnter={() => {
+                      setComment(2);
+                    }}
                   />
                   <Avatar
                     color={comment == 3 ? "success" : "default"}
+                    src="https://i.pravatar.cc/150?u=a04258a2462d826712d"
+                    onMouseEnter={() => {
+                      setComment(3);
+                    }}
+                  />
+                  <Avatar
+                    color={comment == 4 ? "success" : "default"}
                     src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
+                    onMouseEnter={() => {
+                      setComment(4);
+                    }}
                   />
                 </AvatarGroup>
                 {comment == 1 && (
+                  <motion.p
+                    initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: 50 }}
+                    viewport={{ once: true }}
+                    transition={{
+                      duration: 1,
+                      bounce: 0.6,
+                      type: "spring",
+                    }}
+                    className="font-medium text-main-700 dark:text-white"
+                  >
+                    A Lithium Brasil era uma pequena loja virtual, de produtos
+                    Apple, que se agigantou após os serviços do Studio Digital,
+                    com o nosso maravilhoso website, totalmente otimizado para
+                    Mobile e Desktop, e aperfeiçoamento da presença digital no
+                    Google My Business, Facebook e Instagram. Está buscando por
+                    profissionalismo, responsabilidade e dedicação? Então sua
+                    busca acaba aqui.
+                  </motion.p>
+                )}
+                {comment == 2 && (
                   <motion.p
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -108,7 +130,7 @@ export default function HeroTwo() {
                     fechados para quem curte inovação com um toque de estilo!
                   </motion.p>
                 )}
-                {comment == 2 && (
+                {comment == 3 && (
                   <motion.p
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -129,7 +151,7 @@ export default function HeroTwo() {
                     vezes, manda ver com o Studio Digital!
                   </motion.p>
                 )}
-                {comment == 3 && (
+                {comment == 4 && (
                   <motion.p
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
