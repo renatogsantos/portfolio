@@ -28,7 +28,7 @@ export default function HeroOne() {
           duration: 1,
           bounce: 0.6,
           type: "spring",
-          delay: 0.5,
+          delay: 0.3,
         }}
       >
         <ParallaxText baseVelocity={-1}>TRANSFORME SUA</ParallaxText>
@@ -45,7 +45,7 @@ export default function HeroOne() {
               duration: 1,
               bounce: 0.6,
               type: "spring",
-              delay: 0.5,
+              delay: 0.3,
             }}
             className="xl:w-full p-6"
           >

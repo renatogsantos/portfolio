@@ -43,7 +43,7 @@ export default function HeroTwo() {
               duration: 1,
               bounce: 0.6,
               type: "spring",
-              delay: 0.5,
+              delay: 0.3,
             }}
             className="xl:w-full p-6 sticky xl:top-14 h-full"
           >
@@ -215,7 +215,7 @@ export default function HeroTwo() {
               duration: 1,
               bounce: 0.6,
               type: "spring",
-              delay: 0.5,
+              delay: 0.3,
             }}
             className="xl:w-full p-6 flex flex-col gap-4"
           >

@@ -96,6 +96,14 @@ export default function MainNavbar() {
           </NavbarItem>
           <NavbarItem>
             <a
+              href="#journey"
+              className="font-medium text-main-700 dark:text-white"
+            >
+              Jornada
+            </a>
+          </NavbarItem>
+          <NavbarItem>
+            <a
               href="#contact"
               className="font-medium text-main-700 dark:text-white"
             >

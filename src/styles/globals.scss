@@ -105,3 +105,19 @@ body {
     transform: perspective(1000px) rotateX(0);
   }
 }
+
+.journey-grid {
+  width: 100%;
+  overflow: hidden;
+}
+
+.journey-item {
+  width: 100%;
+  height: fit-content;
+  border-radius: 24px;
+  cursor: grab;
+  flex-shrink: inherit;
+  &:active {
+    cursor: grabbing;
+  }
+}

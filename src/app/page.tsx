@@ -4,6 +4,7 @@ import HeroOne from "@/components/sections/HeroOne";
 import HeroThree from "@/components/sections/HeroThree";
 import HeroTwo from "@/components/sections/HeroTwo";
 import HomeSection from "@/components/sections/HomeSection";
+import JourneyBuilder from "@/components/sections/JourneyBuilder";
 
 export default function Home() {
   return (
@@ -21,6 +22,9 @@ export default function Home() {
         </section>
         <section id="showcase">
           <HeroTwo />
+        </section>
+        <section id="journey">
+          <JourneyBuilder />
         </section>
         <section id="contact">
           <HeroFour />

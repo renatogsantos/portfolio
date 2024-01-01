@@ -48,7 +48,7 @@ export default function HeroFour() {
               duration: 1,
               bounce: 0.6,
               type: "spring",
-              delay: 0.5,
+              delay: 0.3,
             }}
             className="flex flex-col gap-6"
           >
@@ -133,7 +133,7 @@ export default function HeroFour() {
               duration: 1,
               bounce: 0.6,
               type: "spring",
-              delay: 0.5,
+              delay: 0.3,
             }}
           >
             <ContactForm />

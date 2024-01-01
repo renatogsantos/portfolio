@@ -19,7 +19,7 @@ export default function CardText({ icon, title, description }: CardProps) {
           duration: 1,
           bounce: 0.6,
           type: "spring",
-          delay: 0.5,
+          delay: 0.3,
         }}
         className="flex flex-col gap-4 p-6"
       >
