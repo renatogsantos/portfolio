@@ -4,6 +4,7 @@ import "../styles/globals.scss";
 import "./globals.css";
 import { Providers } from "./providers";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import MainNavbar from "@/components/Navbar";
 
 const fontFamily = Montserrat({ subsets: ["latin"] });
 
@@ -23,7 +24,10 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body suppressHydrationWarning className={fontFamily.className}>
-        <Providers>{children}</Providers>
+        <Providers>
+          <MainNavbar />
+          {children}
+        </Providers>
         <SpeedInsights />
       </body>
     </html>

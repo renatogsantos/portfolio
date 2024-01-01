@@ -9,7 +9,6 @@ import JourneyBuilder from "@/components/sections/JourneyBuilder";
 export default function Home() {
   return (
     <>
-      <MainNavbar />
       <main>
         <section id="inicio" className="p-4">
           <HomeSection />
