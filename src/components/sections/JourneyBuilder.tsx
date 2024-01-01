@@ -68,7 +68,7 @@ export default function JourneyBuilder() {
         viewport={{ once: true }}
         transition={{
           duration: 1,
-          bounce: 0.6,
+          bounce: 0.4,
           type: "spring",
           delay: 0.3,
         }}
@@ -82,10 +82,9 @@ export default function JourneyBuilder() {
             exit={{ opacity: 0, y: 50 }}
             viewport={{ once: true }}
             transition={{
-              duration: 1,
-              bounce: 0.6,
+              duration: 0.3,
+              bounce: 0.4,
               type: "spring",
-              delay: 0.3,
             }}
             className="flex flex-col xl:col-span-2"
             drag
@@ -121,10 +120,9 @@ export default function JourneyBuilder() {
               exit={{ opacity: 0, y: 50 }}
               viewport={{ once: true }}
               transition={{
-                duration: 1,
-                bounce: 0.6,
+                duration: 0.3,
+                bounce: 0.4,
                 type: "spring",
-                delay: 0.3,
               }}
               key={i}
               className="journey-item dark:bg-slate-800 bg-white shadow-3xl p-6"
@@ -150,10 +148,9 @@ export default function JourneyBuilder() {
             exit={{ opacity: 0, y: 50 }}
             viewport={{ once: true }}
             transition={{
-              duration: 1,
-              bounce: 0.6,
+              duration: 0.3,
+              bounce: 0.4,
               type: "spring",
-              delay: 0.3,
             }}
             className="flex flex-col xl:col-span-2"
             drag
