@@ -1,9 +1,10 @@
 "use client";
 import { motion } from "framer-motion";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function JourneyBuilder() {
   const constraintsRef = useRef(null);
+  const [responsive, setResponsive] = useState(false);
 
   const processoConstrucaoSite = [
     {
@@ -59,6 +60,10 @@ export default function JourneyBuilder() {
     },
   ];
 
+  useEffect(() => {
+    window.innerWidth < 1024 ? setResponsive(false) : setResponsive(true);
+  }, []);
+
   return (
     <>
       <motion.div className="journey-grid" ref={constraintsRef}>
@@ -73,8 +78,8 @@ export default function JourneyBuilder() {
               bounce: 0.4,
               type: "spring",
             }}
-            className="flex flex-col xl:col-span-2"
-            drag
+            className="flex flex-col xl:col-span-2 p-4 xl:p-0"
+            drag={responsive}
             dragConstraints={constraintsRef}
           >
             <div>
@@ -112,7 +117,7 @@ export default function JourneyBuilder() {
               }}
               key={i}
               className="journey-item dark:bg-slate-800 bg-white shadow-3xl p-6"
-              drag
+              drag={responsive}
               dragConstraints={constraintsRef}
             >
               <span className="text-3xl font-black text-main-700 dark:text-white">
@@ -137,8 +142,8 @@ export default function JourneyBuilder() {
               bounce: 0.4,
               type: "spring",
             }}
-            className="flex flex-col xl:col-span-2"
-            drag
+            className="flex flex-col xl:col-span-2 p-4 xl:p-0"
+            drag={responsive}
             dragConstraints={constraintsRef}
           >
             <div>

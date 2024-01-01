@@ -30,7 +30,6 @@ export default function HomeSection() {
         onOpenChange={onOpenChange}
         size="2xl"
         placement="center"
-        backdrop="blur"
         className="p-6 bg-white dark:bg-main-800"
       >
         <ModalContent>
