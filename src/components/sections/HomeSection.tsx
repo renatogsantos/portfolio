@@ -8,12 +8,42 @@ import {
   WhatsappLogo,
 } from "@phosphor-icons/react";
 import MainButton from "../Button";
-import { Link, Tooltip } from "@nextui-org/react";
+import {
+  Link,
+  Modal,
+  ModalBody,
+  ModalContent,
+  ModalHeader,
+  Tooltip,
+  useDisclosure,
+} from "@nextui-org/react";
 import { motion } from "framer-motion";
+import ContactForm from "./ContactForm";
 
 export default function HomeSection() {
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+
   return (
     <>
+      <Modal
+        isOpen={isOpen}
+        onOpenChange={onOpenChange}
+        size="2xl"
+        placement="center"
+        backdrop="blur"
+        className="p-6 bg-white dark:bg-main-800"
+      >
+        <ModalContent>
+          {(onClose) => (
+            <>
+              <ModalBody>
+                <ContactForm />
+              </ModalBody>
+            </>
+          )}
+        </ModalContent>
+      </Modal>
+
       <div className="container mx-auto rounded-3xl dark:bg-slate-800 bg-white lg:mt-12 xl:mt-24 shadow-3xl grid lg:grid-cols-2 bg-home">
         <div className="flex flex-col gap-6 p-8 lg:p-14 xl:p-16">
           <p className="text-main-700 dark:text-white text-1xl xl:text-2xl font-bold">
@@ -33,9 +63,8 @@ export default function HomeSection() {
             icon={null}
             typeButton="button"
             title="Entre em contato"
-            onClick={() => {
-              console.log("oi");
-            }}
+            onClick={onOpen}
+            onPress={onOpen}
           />
           <div className="flex items-center gap-4">
             <span className="flex items-center font-medium text-main-700 dark:text-white">
