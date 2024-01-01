@@ -1,4 +1,5 @@
 "use client";
+import { DotsSixVertical } from "@phosphor-icons/react";
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
@@ -54,7 +55,7 @@ export default function JourneyBuilder() {
     {
       titulo: "Suporte Contínuo Personalizado",
       descricao:
-        "Oferecemos suporte contínuo pós-lançamento, garantindo o sucesso constante do seu site.",
+        "Oferecemos serviço de suporte contínuo pós-lançamento, garantindo o sucesso constante do seu site.",
       razao:
         "Manter seu site atualizado e atender às demandas em constante evolução do seu negócio.",
     },
@@ -116,12 +117,12 @@ export default function JourneyBuilder() {
                 type: "spring",
               }}
               key={i}
-              className="journey-item dark:bg-slate-800 bg-white shadow-3xl p-6"
+              className="journey-item dark:bg-slate-800 bg-white shadow-3xl dark:shadow-2xl p-6 flex flex-col gap-2"
               drag={responsive}
               dragConstraints={constraintsRef}
             >
-              <span className="text-3xl font-black text-main-700 dark:text-white">
-                {i + 1}
+              <span className="text-3xl font-black text-main-700 dark:text-white flex justify-between">
+                {i + 1}<DotsSixVertical size={32} weight="bold" className="text-slate-200 dark:text-slate-700" />
               </span>
               <h4 className="text-main-300 font-bold">{titulo}</h4>
               <p className="text-xs font-medium text-main-700 dark:text-white">
