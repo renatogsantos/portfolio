@@ -44,7 +44,7 @@ export default function MainNavbar() {
             <div className="flex items-center gap-2">
               <Avatar
                 isBordered
-                color="primary"
+                color="success"
                 src="https://github.com/renatogsantos.png"
               />
               <div className="flex flex-col gap-1">
