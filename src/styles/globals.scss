@@ -4,10 +4,9 @@
 
 body {
   background: url("/bg.svg");
-  background-size: cover;
+  background-size: contain;
   background-position: top center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   user-select: none;
 }
 
