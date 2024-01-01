@@ -11,22 +11,22 @@ export default function Home() {
     <>
       <MainNavbar />
       <main>
-        <section id="home" className="p-4">
+        <section id="inicio" className="p-4">
           <HomeSection />
         </section>
-        <section id="presence">
+        <section id="presenca">
           <HeroOne />
         </section>
-        <section id="aboutus">
+        <section id="sobre">
           <HeroThree />
         </section>
         <section id="showcase">
           <HeroTwo />
         </section>
-        <section id="journey">
+        <section id="jornada">
           <JourneyBuilder />
         </section>
-        <section id="contact">
+        <section id="contato">
           <HeroFour />
         </section>
       </main>

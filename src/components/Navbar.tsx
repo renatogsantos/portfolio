@@ -27,14 +27,10 @@ import {
 export default function MainNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
-  
+
   return (
     <>
-      <Navbar
-        onMenuOpenChange={setIsMenuOpen}
-        isBordered
-        maxWidth="2xl"
-      >
+      <Navbar onMenuOpenChange={setIsMenuOpen} isBordered maxWidth="2xl">
         <NavbarContent>
           <NavbarMenuToggle
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -72,7 +68,7 @@ export default function MainNavbar() {
           </NavbarItem>
           <NavbarItem>
             <a
-              href="#presence"
+              href="#presenca"
               className="font-medium text-main-700 dark:text-white"
             >
               Presença Online
@@ -80,7 +76,7 @@ export default function MainNavbar() {
           </NavbarItem>
           <NavbarItem>
             <a
-              href="#aboutus"
+              href="#sobre"
               className="font-medium text-main-700 dark:text-white"
             >
               Sobre nós
@@ -96,7 +92,7 @@ export default function MainNavbar() {
           </NavbarItem>
           <NavbarItem>
             <a
-              href="#journey"
+              href="#jornada"
               className="font-medium text-main-700 dark:text-white"
             >
               Jornada
@@ -104,7 +100,7 @@ export default function MainNavbar() {
           </NavbarItem>
           <NavbarItem>
             <a
-              href="#contact"
+              href="#contato"
               className="font-medium text-main-700 dark:text-white"
             >
               Contato
@@ -127,6 +123,46 @@ export default function MainNavbar() {
             >
               <CalendarPlus size={24} weight="duotone" /> Reservar horário
             </Link>
+          </NavbarMenuItem>
+          <NavbarMenuItem>
+            <a
+              href="#presenca"
+              className="font-medium text-main-700 dark:text-white"
+            >
+              Presença Online
+            </a>
+          </NavbarMenuItem>
+          <NavbarMenuItem>
+            <a
+              href="#sobre"
+              className="font-medium text-main-700 dark:text-white"
+            >
+              Sobre nós
+            </a>
+          </NavbarMenuItem>
+          <NavbarMenuItem>
+            <a
+              href="#showcase"
+              className="font-medium text-main-700 dark:text-white"
+            >
+              Showcase
+            </a>
+          </NavbarMenuItem>
+          <NavbarMenuItem>
+            <a
+              href="#jornada"
+              className="font-medium text-main-700 dark:text-white"
+            >
+              Jornada
+            </a>
+          </NavbarMenuItem>
+          <NavbarMenuItem>
+            <a
+              href="#contato"
+              className="font-medium text-main-700 dark:text-white"
+            >
+              Contato
+            </a>
           </NavbarMenuItem>
         </NavbarMenu>
       </Navbar>
