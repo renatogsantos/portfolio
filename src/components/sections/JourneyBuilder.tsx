@@ -61,25 +61,12 @@ export default function JourneyBuilder() {
 
   return (
     <>
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: 50 }}
-        viewport={{ once: true }}
-        transition={{
-          duration: 1,
-          bounce: 0.4,
-          type: "spring",
-          delay: 0.3,
-        }}
-        className="journey-grid p-4"
-        ref={constraintsRef}
-      >
+      <motion.div className="journey-grid" ref={constraintsRef}>
         <div className="container mx-auto py-24 grid xl:grid-cols-4 gap-4">
           <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 50 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            whileDrag={{ scale: 1.2 }}
             viewport={{ once: true }}
             transition={{
               duration: 0.3,
@@ -88,7 +75,6 @@ export default function JourneyBuilder() {
             }}
             className="flex flex-col xl:col-span-2"
             drag
-            whileDrag={{ scale: 1.2 }}
             dragConstraints={constraintsRef}
           >
             <div>
@@ -115,8 +101,9 @@ export default function JourneyBuilder() {
           </motion.div>
           {processoConstrucaoSite.map(({ titulo, descricao, razao }, i) => (
             <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              whileDrag={{ scale: 1.2 }}
               viewport={{ once: true }}
               transition={{
                 duration: 0.3,
@@ -126,7 +113,6 @@ export default function JourneyBuilder() {
               key={i}
               className="journey-item dark:bg-slate-800 bg-white shadow-3xl p-6"
               drag
-              whileDrag={{ scale: 1.2 }}
               dragConstraints={constraintsRef}
             >
               <span className="text-3xl font-black text-main-700 dark:text-white">
@@ -142,9 +128,9 @@ export default function JourneyBuilder() {
             </motion.div>
           ))}
           <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 50 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            whileDrag={{ scale: 1.2 }}
             viewport={{ once: true }}
             transition={{
               duration: 0.3,
@@ -153,7 +139,6 @@ export default function JourneyBuilder() {
             }}
             className="flex flex-col xl:col-span-2"
             drag
-            whileDrag={{ scale: 1.2 }}
             dragConstraints={constraintsRef}
           >
             <div>
