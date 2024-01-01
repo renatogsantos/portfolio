@@ -33,7 +33,7 @@ export default function HeroTwo() {
         <ParallaxText baseVelocity={-1}>NOSSOS CLIENTES</ParallaxText>
       </motion.div>
       <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row gap-6">
+        <div className="flex flex-col lg:flex-row gap-6">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -45,11 +45,11 @@ export default function HeroTwo() {
               type: "spring",
               delay: 0.3,
             }}
-            className="xl:w-full p-6 sticky xl:top-14 h-full"
+            className="lg:w-full p-6 sticky lg:top-14 h-full"
           >
             <div className="flex flex-col justify-between gap-4">
               <div className="flex flex-col">
-                <h2 className="text-3xl xl:text-6xl font-bold text-main-700 dark:text-white">
+                <h2 className="text-3xl lg:text-6xl font-bold text-main-700 dark:text-white">
                   Explorando a <b>Criatividade</b>
                 </h2>
                 <p className="font-medium mt-3">
@@ -217,7 +217,7 @@ export default function HeroTwo() {
               type: "spring",
               delay: 0.3,
             }}
-            className="xl:w-full p-6 flex flex-col gap-4"
+            className="lg:w-full p-6 flex flex-col gap-4"
           >
             <CardPortfolio
               image="/pokedexplore.png"

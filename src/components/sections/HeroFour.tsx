@@ -38,7 +38,7 @@ export default function HeroFour() {
         <ParallaxText baseVelocity={-1}>CONTATO</ParallaxText>
       </motion.div>
       <div className="container mx-auto p-4 lg:mt-12">
-        <div className="grid xl:grid-cols-2 gap-4">
+        <div className="grid lg:grid-cols-2 gap-4">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -57,7 +57,7 @@ export default function HeroFour() {
               weight="duotone"
               className="text-main-700 dark:text-white"
             />
-            <h2 className="text-3xl xl:text-4xl font-bold text-main-700 dark:text-white">
+            <h2 className="text-3xl lg:text-4xl font-bold text-main-700 dark:text-white">
               Conecte-se conosco para explorar oportunidades incríveis!
             </h2>
             <p className="font-medium text-main-700 dark:text-white">

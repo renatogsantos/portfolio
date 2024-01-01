@@ -35,7 +35,7 @@ export default function HeroOne() {
         <ParallaxText baseVelocity={1}>PRESENÇA ONLINE</ParallaxText>
       </motion.div>
       <div className="container mx-auto">
-        <div className="flex flex-col xl:items-center gap-6">
+        <div className="flex flex-col lg:items-center gap-6">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -47,9 +47,9 @@ export default function HeroOne() {
               type: "spring",
               delay: 0.3,
             }}
-            className="xl:w-full p-6"
+            className="lg:w-full p-6"
           >
-            <h2 className="text-3xl xl:text-6xl font-bold text-main-700 dark:text-white">
+            <h2 className="text-3xl lg:text-6xl font-bold text-main-700 dark:text-white">
               Transforme sua{" "}
               <b>
                 <span className="hover:text-main-300 transition-colors ease-in-out">
@@ -206,7 +206,7 @@ export default function HeroOne() {
               </Tooltip>
             </div>
           </motion.div>
-          <div className="xl:w-full">
+          <div className="lg:w-full">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
               <CardText
                 icon={<BezierCurve size={40} weight="duotone" />}

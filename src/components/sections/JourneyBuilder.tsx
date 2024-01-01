@@ -68,7 +68,7 @@ export default function JourneyBuilder() {
   return (
     <>
       <motion.div className="journey-grid" ref={constraintsRef}>
-        <div className="container mx-auto py-24 grid xl:grid-cols-4 gap-4">
+        <div className="container mx-auto py-24 grid lg:grid-cols-4 gap-4">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -79,12 +79,12 @@ export default function JourneyBuilder() {
               bounce: 0.4,
               type: "spring",
             }}
-            className="flex flex-col xl:col-span-2 p-4 xl:p-0"
+            className="flex flex-col lg:col-span-2 p-4 lg:p-0"
             drag={responsive}
             dragConstraints={constraintsRef}
           >
             <div>
-              <h2 className="text-3xl xl:text-4xl font-bold text-main-700 dark:text-white">
+              <h2 className="text-3xl lg:text-4xl font-bold text-main-700 dark:text-white">
                 Sua{" "}
                 <span className="hover:text-main-300 transition ease-in-out">
                   Jornada Digital
@@ -143,7 +143,7 @@ export default function JourneyBuilder() {
               bounce: 0.4,
               type: "spring",
             }}
-            className="flex flex-col xl:col-span-2 p-4 xl:p-0"
+            className="flex flex-col lg:col-span-2 p-4 lg:p-0"
             drag={responsive}
             dragConstraints={constraintsRef}
           >
