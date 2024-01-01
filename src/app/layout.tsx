@@ -25,6 +25,14 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body suppressHydrationWarning className={fontFamily.className}>
         <Providers>
+          <div className="bg-slate-600 text-white fixed bottom-0 z-[1000] w-full flex justify-center">
+            <span className="text-xs hidden lg:flex">
+              Estamos trabalhando para aprimorar nosso site! Algumas informações
+              ainda estão em desenvolvimento e podem ser ajustadas. Agradecemos
+              sua compreensão e paciência.
+            </span>
+            <span className="text-xs lg:hidden">Site em desenvolvimento.</span>
+          </div>
           <MainNavbar />
           {children}
         </Providers>
