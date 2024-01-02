@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description:
     "Bem-vindo ao Studio Digital, onde a inovação encontra o design e a experiência digital ganha vida!",
   keywords:
-    "design UX/UI, experiência digital, presença online, design imersivo,desenvolvimento web, Next.js, performance do site, experiência do usuário, experiências digitais, inovação, design, presença online, sucesso online, presença online, estratégias digitais, visibilidade, nextjs, next, js, tailwind, typescript",
+    "design UX/UI, UX/UI, experiência digital, presença online, design imersivo,desenvolvimento web, Next.js, performance do site, experiência do usuário, experiências digitais, inovação, design, presença online, sucesso online, presença online, estratégias digitais, visibilidade, nextjs, next, js, tailwind, typescript",
 };
 
 export default function RootLayout({
@@ -24,6 +24,11 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body suppressHydrationWarning className={fontFamily.className}>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-4P2MKXSTYZ"
+        ></script>
+        <script>{`window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-4P2MKXSTYZ');`}</script>
         <Providers>
           <div className="bg-slate-600 text-white fixed bottom-0 z-[1000] w-full flex justify-center">
             <span className="text-xs hidden lg:flex">
