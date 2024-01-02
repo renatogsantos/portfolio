@@ -26,9 +26,9 @@ export default function RootLayout({
       <body suppressHydrationWarning className={fontFamily.className}>
         <script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-4P2MKXSTYZ"
+          src="https://www.googletagmanager.com/gtag/js?id=G-TCSLSSH0GR"
         ></script>
-        <script>{`window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-4P2MKXSTYZ');`}</script>
+        <script>{`window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-TCSLSSH0GR');`}</script>
         <Providers>
           <div className="bg-slate-600 text-white fixed bottom-0 z-[1000] w-full flex justify-center">
             <span className="text-xs hidden lg:flex">
