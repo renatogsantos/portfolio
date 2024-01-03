@@ -5,6 +5,8 @@ import "./globals.css";
 import { Providers } from "./providers";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import MainNavbar from "@/components/Navbar";
+import Script from "next/script";
+import Head from "next/head";
 
 const fontFamily = Montserrat({ subsets: ["latin"] });
 
@@ -24,11 +26,20 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body suppressHydrationWarning className={fontFamily.className}>
-        <script
+        <Script
+          strategy="beforeInteractive"
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-TCSLSSH0GR"
-        ></script>
-        <script>{`window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-TCSLSSH0GR');`}</script>
+        />
+        <Script
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-TCSLSSH0GR');`,
+          }}
+        />
         <Providers>
           <div className="bg-slate-600 text-white fixed bottom-0 z-[1000] w-full flex justify-center">
             <span className="text-xs hidden lg:flex">
