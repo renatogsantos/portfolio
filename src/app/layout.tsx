@@ -25,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body suppressHydrationWarning className={fontFamily.className}>
+      <head>
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-TCSLSSH0GR"
@@ -38,6 +38,8 @@ export default function RootLayout({
             gtag('config', 'G-TCSLSSH0GR');`,
           }}
         />
+      </head>
+      <body suppressHydrationWarning className={fontFamily.className}>
         <Providers>
           <div className="bg-slate-600 text-white fixed bottom-0 z-[1000] w-full flex justify-center">
             <span className="text-xs hidden lg:flex">
