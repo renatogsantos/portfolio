@@ -51,7 +51,7 @@ export default function HeroThree() {
               className="man-hero-three"
             />
           </div>
-          <div className="flex flex-col gap-6 p-8 lg:p-14 lg:p-16 col-span-2">
+          <div className="flex flex-col gap-6 p-8 lg:p-16 col-span-2">
             <h2 className="text-3xl lg:text-4xl font-bold text-main-700 dark:text-white">
               Studio <span className="text-main-100">Digital</span>
             </h2>

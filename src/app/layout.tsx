@@ -26,13 +26,11 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body suppressHydrationWarning className={fontFamily.className}>
-        <Script
-          strategy="beforeInteractive"
+        <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-TCSLSSH0GR"
         />
-        <Script
-          strategy="beforeInteractive"
+        <script
           dangerouslySetInnerHTML={{
             __html: `window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
