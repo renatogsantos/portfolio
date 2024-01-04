@@ -101,9 +101,10 @@ export default function HomeSection() {
         exit={{ opacity: 0, y: 50 }}
         viewport={{ once: true }}
         transition={{
-          duration: 1,
+          duration: 0.6,
           bounce: 0.6,
           type: "spring",
+          delay: 0.3,
         }}
         className="container mx-auto p-4 flex justify-center lg:justify-between"
       >

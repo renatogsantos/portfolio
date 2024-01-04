@@ -67,7 +67,20 @@ export default function JourneyBuilder() {
 
   return (
     <>
-      <motion.div className="journey-grid" ref={constraintsRef}>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: 50 }}
+        viewport={{ once: true }}
+        transition={{
+          duration: 0.6,
+          bounce: 0.6,
+          type: "spring",
+          delay: 0.3,
+        }}
+        className="journey-grid"
+        ref={constraintsRef}
+      >
         <div className="container mx-auto py-24 grid lg:grid-cols-4 gap-4">
           <motion.div
             initial={{ opacity: 0 }}
@@ -75,9 +88,10 @@ export default function JourneyBuilder() {
             whileDrag={{ scale: 1.2 }}
             viewport={{ once: true }}
             transition={{
-              duration: 0.3,
+              duration: 0.6,
               bounce: 0.4,
               type: "spring",
+              delay: 0.3,
             }}
             className="flex flex-col lg:col-span-2 p-4 lg:p-0"
             drag={responsive}
@@ -112,9 +126,10 @@ export default function JourneyBuilder() {
               whileDrag={{ scale: 1.2 }}
               viewport={{ once: true }}
               transition={{
-                duration: 0.3,
+                duration: 0.6,
                 bounce: 0.4,
                 type: "spring",
+                delay: 0.3,
               }}
               key={i}
               className="journey-item dark:bg-main-700 bg-white shadow-3xl dark:shadow-2xl p-6 flex flex-col gap-2"
@@ -122,7 +137,12 @@ export default function JourneyBuilder() {
               dragConstraints={constraintsRef}
             >
               <span className="text-3xl font-black text-main-700 dark:text-white flex justify-between">
-                {i + 1}<DotsSixVertical size={32} weight="bold" className="text-slate-200 dark:text-slate-700" />
+                {i + 1}
+                <DotsSixVertical
+                  size={32}
+                  weight="bold"
+                  className="text-slate-200 dark:text-slate-700"
+                />
               </span>
               <h4 className="text-main-300 font-bold">{titulo}</h4>
               <p className="text-xs font-semibold text-main-700 dark:text-white">
@@ -139,9 +159,10 @@ export default function JourneyBuilder() {
             whileDrag={{ scale: 1.2 }}
             viewport={{ once: true }}
             transition={{
-              duration: 0.3,
+              duration: 0.6,
               bounce: 0.4,
               type: "spring",
+              delay: 0.3,
             }}
             className="flex flex-col lg:col-span-2 p-4 lg:p-0"
             drag={responsive}

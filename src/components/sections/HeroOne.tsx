@@ -25,7 +25,7 @@ export default function HeroOne() {
         exit={{ opacity: 0, y: 50 }}
         viewport={{ once: true }}
         transition={{
-          duration: 1,
+          duration: 0.6,
           bounce: 0.6,
           type: "spring",
           delay: 0.3,
@@ -42,7 +42,7 @@ export default function HeroOne() {
             exit={{ opacity: 0, y: 50 }}
             viewport={{ once: true }}
             transition={{
-              duration: 1,
+              duration: 0.6,
               bounce: 0.6,
               type: "spring",
               delay: 0.3,

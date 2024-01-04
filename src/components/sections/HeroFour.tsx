@@ -29,15 +29,28 @@ export default function HeroFour() {
         exit={{ opacity: 0, y: 50 }}
         viewport={{ once: true }}
         transition={{
-          duration: 0.5,
+          duration: 0.6,
           bounce: 0.6,
           type: "spring",
+          delay: 0.3,
         }}
       >
         <ParallaxText baseVelocity={1}>ENTRE EM</ParallaxText>
         <ParallaxText baseVelocity={-1}>CONTATO</ParallaxText>
       </motion.div>
-      <div className="container mx-auto p-4 lg:mt-12">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: 50 }}
+        viewport={{ once: true }}
+        transition={{
+          duration: 0.6,
+          bounce: 0.6,
+          type: "spring",
+          delay: 0.3,
+        }}
+          className="container mx-auto p-4 lg:mt-12"
+      >
         <div className="container mx-auto rounded-3xl dark:bg-main-700 bg-white mb-4 shadow-3xl dark:shadow-2xl p-12">
           <div className="grid lg:grid-cols-2 gap-4">
             <motion.div
@@ -46,10 +59,11 @@ export default function HeroFour() {
               exit={{ opacity: 0, y: 50 }}
               viewport={{ once: true }}
               transition={{
-                duration: 1,
+                duration: 0.6,
                 bounce: 0.6,
                 type: "spring",
                 delay: 0.3,
+                
               }}
               className="flex flex-col gap-6"
             >
@@ -131,7 +145,7 @@ export default function HeroFour() {
               exit={{ opacity: 0, y: 50 }}
               viewport={{ once: true }}
               transition={{
-                duration: 1,
+                duration: 0.6,
                 bounce: 0.6,
                 type: "spring",
                 delay: 0.3,
@@ -141,7 +155,7 @@ export default function HeroFour() {
             </motion.div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }

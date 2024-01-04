@@ -16,7 +16,7 @@ export default function CardText({ icon, title, description }: CardProps) {
         exit={{ opacity: 0, y: 50 }}
         viewport={{ once: true }}
         transition={{
-          duration: 1,
+          duration: 0.6,
           bounce: 0.6,
           type: "spring",
           delay: 0.3,
@@ -27,10 +27,10 @@ export default function CardText({ icon, title, description }: CardProps) {
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
           transition={{
-            duration: 1,
+            duration: 0.6,
             bounce: 0.6,
-            type: "spring",
-            delay: 0.2,
+            type: "spring",            
+            delay: 0.3,
           }}
           className="card-icon"
         >
