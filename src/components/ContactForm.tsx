@@ -1,5 +1,5 @@
 import { Input, Select, SelectItem, Textarea } from "@nextui-org/react";
-import MainButton from "../Button";
+import MainButton from "./Button";
 import { PaperPlaneTilt } from "@phosphor-icons/react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { useRef } from "react";

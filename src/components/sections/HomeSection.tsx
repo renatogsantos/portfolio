@@ -18,7 +18,7 @@ import {
   useDisclosure,
 } from "@nextui-org/react";
 import { motion } from "framer-motion";
-import ContactForm from "./ContactForm";
+import ContactForm from "../ContactForm";
 
 export default function HomeSection() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -43,7 +43,7 @@ export default function HomeSection() {
         </ModalContent>
       </Modal>
 
-      <div className="container mx-auto rounded-3xl dark:bg-slate-800 bg-white lg:mt-12 xl:mt-24 shadow-3xl grid lg:grid-cols-2 bg-home">
+      <div className="container mx-auto rounded-3xl dark:bg-main-700 bg-white lg:mt-12 xl:mt-24 shadow-3xl dark:shadow-2xl grid lg:grid-cols-2 bg-home">
         <div className="flex flex-col gap-6 p-8 lg:p-14 xl:p-16">
           <p className="text-main-700 dark:text-white text-1xl xl:text-2xl font-bold">
             Construindo o futuro

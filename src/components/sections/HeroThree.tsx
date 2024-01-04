@@ -41,7 +41,7 @@ export default function HeroThree() {
             bounce: 0.6,
             type: "spring",
           }}
-          className="container mx-auto rounded-3xl dark:bg-slate-800 bg-white lg:my-12 shadow-3xl grid lg:grid-cols-3 bg-hero-three"
+          className="container mx-auto rounded-3xl dark:bg-main-700 bg-white lg:my-12 shadow-3xl dark:shadow-2xl grid lg:grid-cols-3 bg-hero-three"
         >
           <div className="relative hidden lg:flex col-span-1">
             <img

@@ -117,7 +117,7 @@ export default function JourneyBuilder() {
                 type: "spring",
               }}
               key={i}
-              className="journey-item dark:bg-slate-800 bg-white shadow-3xl dark:shadow-2xl p-6 flex flex-col gap-2"
+              className="journey-item dark:bg-main-700 bg-white shadow-3xl dark:shadow-2xl p-6 flex flex-col gap-2"
               drag={responsive}
               dragConstraints={constraintsRef}
             >
@@ -125,10 +125,10 @@ export default function JourneyBuilder() {
                 {i + 1}<DotsSixVertical size={32} weight="bold" className="text-slate-200 dark:text-slate-700" />
               </span>
               <h4 className="text-main-300 font-bold">{titulo}</h4>
-              <p className="text-xs font-medium text-main-700 dark:text-white">
+              <p className="text-xs font-semibold text-main-700 dark:text-white">
                 {descricao}
               </p>
-              <p className="text-xs font-medium text-main-700 dark:text-white">
+              <p className="text-xs font-semibold text-main-700 dark:text-white">
                 {razao}
               </p>
             </motion.div>

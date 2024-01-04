@@ -22,7 +22,7 @@ const config: any = {
           400: "#9317FF",
           500: "#0066FF",
           600: "#6401FF",
-          700: "#3B445B",
+          700: "#1D222E",
           800: "#13161F",
         },
         blue: {
@@ -65,7 +65,7 @@ const config: any = {
             },
             secondary: {
               foreground: "#f9fcff",
-              DEFAULT: "#3B445B",
+              DEFAULT: "#1D222E",
             },
           }, // light theme colors
         },
