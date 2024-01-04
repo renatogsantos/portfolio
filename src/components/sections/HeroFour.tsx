@@ -29,10 +29,10 @@ export default function HeroFour() {
         exit={{ opacity: 0, y: 50 }}
         viewport={{ once: true }}
         transition={{
-          duration: 0.6,
+          duration: 1.2,
           bounce: 0.6,
           type: "spring",
-          delay: 0.3,
+          delay: 0.1
         }}
       >
         <ParallaxText baseVelocity={1}>ENTRE EM</ParallaxText>
@@ -44,10 +44,10 @@ export default function HeroFour() {
         exit={{ opacity: 0, y: 50 }}
         viewport={{ once: true }}
         transition={{
-          duration: 0.6,
+          duration: 1.2,
           bounce: 0.6,
           type: "spring",
-          delay: 0.3,
+          delay: 0.1
         }}
           className="container mx-auto p-4 lg:mt-12"
       >
@@ -59,10 +59,10 @@ export default function HeroFour() {
               exit={{ opacity: 0, y: 50 }}
               viewport={{ once: true }}
               transition={{
-                duration: 0.6,
+                duration: 1.2,
                 bounce: 0.6,
                 type: "spring",
-                delay: 0.3,
+                delay: 0.1
                 
               }}
               className="flex flex-col gap-6"
@@ -145,10 +145,10 @@ export default function HeroFour() {
               exit={{ opacity: 0, y: 50 }}
               viewport={{ once: true }}
               transition={{
-                duration: 0.6,
+                duration: 1.2,
                 bounce: 0.6,
                 type: "spring",
-                delay: 0.3,
+                delay: 0.1
               }}
             >
               <ContactForm />

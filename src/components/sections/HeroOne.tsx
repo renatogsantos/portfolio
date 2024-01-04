@@ -25,10 +25,10 @@ export default function HeroOne() {
         exit={{ opacity: 0, y: 50 }}
         viewport={{ once: true }}
         transition={{
-          duration: 0.6,
+          duration: 1.2,
           bounce: 0.6,
           type: "spring",
-          delay: 0.3,
+          delay: 0.1
         }}
       >
         <ParallaxText baseVelocity={-1}>TRANSFORME SUA</ParallaxText>
@@ -42,10 +42,10 @@ export default function HeroOne() {
             exit={{ opacity: 0, y: 50 }}
             viewport={{ once: true }}
             transition={{
-              duration: 0.6,
+              duration: 1.2,
               bounce: 0.6,
               type: "spring",
-              delay: 0.3,
+              delay: 0.1
             }}
             className="lg:w-full p-6"
           >

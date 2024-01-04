@@ -22,10 +22,10 @@ export default function HeroThree() {
         exit={{ opacity: 0, y: 50 }}
         viewport={{ once: true }}
         transition={{
-          duration: 0.6,
+          duration: 1.2,
           bounce: 0.6,
           type: "spring",
-          delay: 0.3,
+          delay: 0.1
         }}
       >
         <ParallaxText baseVelocity={-1}>SAIBA MAIS</ParallaxText>
@@ -38,10 +38,10 @@ export default function HeroThree() {
           exit={{ opacity: 0, y: 50 }}
           viewport={{ once: true }}
           transition={{
-            duration: 0.6,
+            duration: 1.2,
             bounce: 0.6,
             type: "spring",
-            delay: 0.3,
+            delay: 0.1
           }}
           className="container mx-auto rounded-3xl dark:bg-main-700 bg-white lg:my-12 shadow-3xl dark:shadow-2xl grid lg:grid-cols-3 bg-hero-three"
         >

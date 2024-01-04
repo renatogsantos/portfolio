@@ -24,10 +24,10 @@ export default function HeroTwo() {
         exit={{ opacity: 0, y: 50 }}
         viewport={{ once: true }}
         transition={{
-          duration: 0.6,
+          duration: 1.2,
           bounce: 0.6,
           type: "spring",
-          delay: 0.3,
+          delay: 0.1
         }}
       >
         <ParallaxText baseVelocity={1}>PORTFÓLIO</ParallaxText>
@@ -41,10 +41,10 @@ export default function HeroTwo() {
             exit={{ opacity: 0, y: 50 }}
             viewport={{ once: true }}
             transition={{
-              duration: 0.6,
+              duration: 1.2,
               bounce: 0.6,
               type: "spring",
-              delay: 0.3,
+              delay: 0.1
             }}
             className="lg:w-full p-6 sticky lg:top-14 h-full"
           >
@@ -102,10 +102,10 @@ export default function HeroTwo() {
                     exit={{ opacity: 0, x: 50 }}
                     viewport={{ once: true }}
                     transition={{
-                      duration: 0.6,
+                      duration: 1.2,
                       bounce: 0.6,
                       type: "spring",
-                      delay: 0.3,
+                      delay: 0.1
                     }}
                     className="font-medium text-main-700 dark:text-white"
                   >
@@ -125,10 +125,10 @@ export default function HeroTwo() {
                     exit={{ opacity: 0, x: 50 }}
                     viewport={{ once: true }}
                     transition={{
-                      duration: 0.6,
+                      duration: 1.2,
                       bounce: 0.6,
                       type: "spring",
-                      delay: 0.3,
+                      delay: 0.1
                     }}
                     className="font-medium text-main-700 dark:text-white"
                   >
@@ -147,10 +147,10 @@ export default function HeroTwo() {
                     exit={{ opacity: 0, x: 50 }}
                     viewport={{ once: true }}
                     transition={{
-                      duration: 0.6,
+                      duration: 1.2,
                       bounce: 0.6,
                       type: "spring",
-                      delay: 0.3,
+                      delay: 0.1
                     }}
                     className="font-medium text-main-700 dark:text-white"
                   >
@@ -169,10 +169,10 @@ export default function HeroTwo() {
                     exit={{ opacity: 0, x: 50 }}
                     viewport={{ once: true }}
                     transition={{
-                      duration: 0.6,
+                      duration: 1.2,
                       bounce: 0.6,
                       type: "spring",
-                      delay: 0.3,
+                      delay: 0.1
                     }}
                     className="font-medium text-main-700 dark:text-white"
                   >
@@ -191,10 +191,10 @@ export default function HeroTwo() {
                     exit={{ opacity: 0, x: 50 }}
                     viewport={{ once: true }}
                     transition={{
-                      duration: 0.6,
+                      duration: 1.2,
                       bounce: 0.6,
                       type: "spring",
-                      delay: 0.3,
+                      delay: 0.1
                     }}
                     className="font-medium text-main-700 dark:text-white"
                   >
@@ -218,10 +218,10 @@ export default function HeroTwo() {
             exit={{ opacity: 0, y: 50 }}
             viewport={{ once: true }}
             transition={{
-              duration: 0.6,
+              duration: 1.2,
               bounce: 0.6,
               type: "spring",
-              delay: 0.3,
+              delay: 0.1
             }}
             className="lg:w-full p-6 flex flex-col gap-4"
           >

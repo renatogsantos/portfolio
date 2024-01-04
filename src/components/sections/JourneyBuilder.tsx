@@ -73,10 +73,10 @@ export default function JourneyBuilder() {
         exit={{ opacity: 0, y: 50 }}
         viewport={{ once: true }}
         transition={{
-          duration: 0.6,
+          duration: 1.2,
           bounce: 0.6,
           type: "spring",
-          delay: 0.3,
+          delay: 0.1
         }}
         className="journey-grid"
         ref={constraintsRef}
@@ -88,10 +88,10 @@ export default function JourneyBuilder() {
             whileDrag={{ scale: 1.2 }}
             viewport={{ once: true }}
             transition={{
-              duration: 0.6,
+              duration: 1.2,
               bounce: 0.4,
               type: "spring",
-              delay: 0.3,
+              delay: 0.1
             }}
             className="flex flex-col lg:col-span-2 p-4 lg:p-0"
             drag={responsive}
@@ -126,10 +126,10 @@ export default function JourneyBuilder() {
               whileDrag={{ scale: 1.2 }}
               viewport={{ once: true }}
               transition={{
-                duration: 0.6,
+                duration: 1.2,
                 bounce: 0.4,
                 type: "spring",
-                delay: 0.3,
+                delay: 0.1
               }}
               key={i}
               className="journey-item dark:bg-main-700 bg-white shadow-3xl dark:shadow-2xl p-6 flex flex-col gap-2"
@@ -159,10 +159,10 @@ export default function JourneyBuilder() {
             whileDrag={{ scale: 1.2 }}
             viewport={{ once: true }}
             transition={{
-              duration: 0.6,
+              duration: 1.2,
               bounce: 0.4,
               type: "spring",
-              delay: 0.3,
+              delay: 0.1
             }}
             className="flex flex-col lg:col-span-2 p-4 lg:p-0"
             drag={responsive}
