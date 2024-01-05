@@ -27,7 +27,7 @@ export default function HeroTwo() {
           duration: 1.2,
           bounce: 0.6,
           type: "spring",
-          delay: 0.1
+          delay: 0.1,
         }}
       >
         <ParallaxText baseVelocity={1}>PORTFÓLIO</ParallaxText>
@@ -44,7 +44,7 @@ export default function HeroTwo() {
               duration: 1.2,
               bounce: 0.6,
               type: "spring",
-              delay: 0.1
+              delay: 0.1,
             }}
             className="lg:w-full p-6 sticky lg:top-14 h-full"
           >
@@ -60,6 +60,7 @@ export default function HeroTwo() {
               <div className="flex flex-col gap-4 items-start">
                 <AvatarGroup isBordered>
                   <Avatar
+                    size="lg"
                     color={comment == 1 ? "success" : "default"}
                     src="/vitor.png"
                     onMouseEnter={() => {
@@ -67,6 +68,7 @@ export default function HeroTwo() {
                     }}
                   />
                   <Avatar
+                    size="lg"
                     color={comment == 2 ? "success" : "default"}
                     src="https://i.pravatar.cc/150?u=a04258114e29026702d"
                     onMouseEnter={() => {
@@ -74,6 +76,7 @@ export default function HeroTwo() {
                     }}
                   />
                   <Avatar
+                    size="lg"
                     color={comment == 3 ? "success" : "default"}
                     src="https://i.pravatar.cc/150?u=a04258a2462d826712d"
                     onMouseEnter={() => {
@@ -81,6 +84,7 @@ export default function HeroTwo() {
                     }}
                   />
                   <Avatar
+                    size="lg"
                     color={comment == 4 ? "success" : "default"}
                     src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
                     onMouseEnter={() => {
@@ -88,8 +92,9 @@ export default function HeroTwo() {
                     }}
                   />
                   <Avatar
+                    size="lg"
                     color={comment == 5 ? "success" : "default"}
-                    src="/perfil-rayx.png"
+                    src="/gesika.png"
                     onMouseEnter={() => {
                       setComment(5);
                     }}
@@ -105,7 +110,7 @@ export default function HeroTwo() {
                       duration: 1.2,
                       bounce: 0.6,
                       type: "spring",
-                      delay: 0.1
+                      delay: 0.1,
                     }}
                     className="font-medium text-main-700 dark:text-white"
                   >
@@ -128,7 +133,7 @@ export default function HeroTwo() {
                       duration: 1.2,
                       bounce: 0.6,
                       type: "spring",
-                      delay: 0.1
+                      delay: 0.1,
                     }}
                     className="font-medium text-main-700 dark:text-white"
                   >
@@ -150,7 +155,7 @@ export default function HeroTwo() {
                       duration: 1.2,
                       bounce: 0.6,
                       type: "spring",
-                      delay: 0.1
+                      delay: 0.1,
                     }}
                     className="font-medium text-main-700 dark:text-white"
                   >
@@ -172,7 +177,7 @@ export default function HeroTwo() {
                       duration: 1.2,
                       bounce: 0.6,
                       type: "spring",
-                      delay: 0.1
+                      delay: 0.1,
                     }}
                     className="font-medium text-main-700 dark:text-white"
                   >
@@ -194,7 +199,7 @@ export default function HeroTwo() {
                       duration: 1.2,
                       bounce: 0.6,
                       type: "spring",
-                      delay: 0.1
+                      delay: 0.1,
                     }}
                     className="font-medium text-main-700 dark:text-white"
                   >
@@ -221,7 +226,7 @@ export default function HeroTwo() {
               duration: 1.2,
               bounce: 0.6,
               type: "spring",
-              delay: 0.1
+              delay: 0.1,
             }}
             className="lg:w-full p-6 flex flex-col gap-4"
           >
