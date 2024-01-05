@@ -94,7 +94,7 @@ export default function HeroTwo() {
                   <Avatar
                     size="lg"
                     color={comment == 5 ? "success" : "default"}
-                    src="/gesika.png"
+                    src="/gesika-lin.png"
                     onMouseEnter={() => {
                       setComment(5);
                     }}
