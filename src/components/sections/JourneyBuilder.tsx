@@ -100,7 +100,7 @@ export default function JourneyBuilder() {
             <div>
               <h2 className="text-3xl lg:text-4xl font-bold text-main-700 dark:text-white">
                 Sua{" "}
-                <span className="text-main-300">
+                <span className="text-main-100">
                   Jornada Digital
                 </span>{" "}
                 de Sucesso!
