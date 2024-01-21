@@ -144,7 +144,7 @@ export default function JourneyBuilder() {
                   className="text-slate-200 dark:text-slate-700"
                 />
               </span>
-              <h4 className="text-main-300 font-bold">{titulo}</h4>
+              <span className="text-main-300 font-bold">{titulo}</span>
               <p className="text-xs font-semibold text-main-700 dark:text-white">
                 {descricao}
               </p>

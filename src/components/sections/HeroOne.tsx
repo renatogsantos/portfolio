@@ -28,7 +28,7 @@ export default function HeroOne() {
           duration: 1.2,
           bounce: 0.6,
           type: "spring",
-          delay: 0.1
+          delay: 0.1,
         }}
       >
         <ParallaxText baseVelocity={-1}>TRANSFORME SUA</ParallaxText>
@@ -45,7 +45,7 @@ export default function HeroOne() {
               duration: 1.2,
               bounce: 0.6,
               type: "spring",
-              delay: 0.1
+              delay: 0.1,
             }}
             className="lg:w-full p-6"
           >
@@ -77,6 +77,9 @@ export default function HeroOne() {
                 color="primary"
               >
                 <Button
+                  id="HTML 5"
+                  name="HTML 5"
+                  aria-label="HTML 5"
                   size="sm"
                   isIconOnly
                   className="bg-transparent text-main-700 dark:text-white"
@@ -92,6 +95,9 @@ export default function HeroOne() {
                 color="primary"
               >
                 <Button
+                  id="CSS 3"
+                  name="CSS 3"
+                  aria-label="CSS 3"
                   size="sm"
                   isIconOnly
                   className="bg-transparent text-main-700 dark:text-white"
@@ -107,6 +113,9 @@ export default function HeroOne() {
                 color="primary"
               >
                 <Button
+                  id="Javascript"
+                  name="Javascript"
+                  aria-label="Javascript"
                   size="sm"
                   isIconOnly
                   className="bg-transparent text-main-700 dark:text-white"
@@ -122,6 +131,9 @@ export default function HeroOne() {
                 color="primary"
               >
                 <Button
+                  id="Typescript"
+                  name="Typescript"
+                  aria-label="Typescript"
                   size="sm"
                   isIconOnly
                   className="bg-transparent text-main-700 dark:text-white"
@@ -137,6 +149,9 @@ export default function HeroOne() {
                 color="primary"
               >
                 <Button
+                  id="NEXT JS 13"
+                  name="NEXT JS 13"
+                  aria-label="NEXT JS 13"
                   size="sm"
                   isIconOnly
                   className="bg-transparent text-main-700 dark:text-white"
@@ -152,6 +167,9 @@ export default function HeroOne() {
                 color="primary"
               >
                 <Button
+                  id="Tailwindcss"
+                  name="Tailwindcss"
+                  aria-label="Tailwindcss"
                   size="sm"
                   isIconOnly
                   className="bg-transparent text-main-700 dark:text-white"
@@ -167,6 +185,9 @@ export default function HeroOne() {
                 color="primary"
               >
                 <Button
+                  id="React JS"
+                  name="React JS"
+                  aria-label="React JS"
                   size="sm"
                   isIconOnly
                   className="bg-transparent text-main-700 dark:text-white"
@@ -182,6 +203,9 @@ export default function HeroOne() {
                 color="primary"
               >
                 <Button
+                  id="Redux"
+                  name="Redux"
+                  aria-label="Redux"
                   size="sm"
                   isIconOnly
                   className="bg-transparent text-main-700 dark:text-white"
@@ -197,6 +221,9 @@ export default function HeroOne() {
                 color="primary"
               >
                 <Button
+                  id="NPM JS"
+                  name="NPM JS"
+                  aria-label="NPM JS"
                   size="sm"
                   isIconOnly
                   className="bg-transparent text-main-700 dark:text-white"
