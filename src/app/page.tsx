@@ -1,4 +1,3 @@
-import MainNavbar from "@/components/Navbar";
 import HeroFour from "@/components/sections/HeroFour";
 import HeroOne from "@/components/sections/HeroOne";
 import HeroThree from "@/components/sections/HeroThree";

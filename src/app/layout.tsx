@@ -5,8 +5,6 @@ import "./globals.css";
 import { Providers } from "./providers";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import MainNavbar from "@/components/Navbar";
-import Script from "next/script";
-import Head from "next/head";
 
 const fontFamily = Montserrat({ subsets: ["latin"] });
 

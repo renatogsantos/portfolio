@@ -231,19 +231,19 @@ export default function HeroTwo() {
             className="lg:w-full p-6 flex flex-col gap-4"
           >
             <CardPortfolio
-              image="lithiumbr.png"
+              image="/mocks/lithiumbr-mockup.png"
               title="Lithium BR"
               description="LithiumBR: A principal loja online para produtos Apple! Descubra a excelência em tecnologia com a garantia de qualidade e estilo."
               link="https://www.lithiumbr.com/"
             />
             <CardPortfolio
-              image="rayxcomercial.png"
+              image="/mocks/rayx-mockup.png"
               title="Rayx Comercial"
               description="Empresa do ramo de acessórios automotivos. Temos os melhores vendedores da área especializados e comprometidos com o serviço. A nossa empresa está preparada para atender clientes de médio e grande porte, oferecendo sempre uma solução inteligente e prática para o atendimento."
               link="https://www.rayx.com.br/"
             />
             <CardPortfolio
-              image="/pokedexplore.png"
+              image="/mocks/pokedexplore-mockup.png"
               title="PokédExplore"
               description="Um espaço online dedicado aos verdadeiros aficionados por Pokémon que desejam ampliar suas coleções capturando novos exemplares."
               link="https://pokedexplore.vercel.app/"

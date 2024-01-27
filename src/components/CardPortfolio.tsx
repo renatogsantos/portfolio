@@ -21,7 +21,6 @@ export default function CardPortfolio({
       initial={{ scale: 0 }}
       whileInView={{ scale: 1 }}
       transition={{ douration: 1, type: "spring", bounce: 0.3 }}
-      viewport={{ once: true }}
       className="flex flex-col gap-1 relative"
     >
       <div

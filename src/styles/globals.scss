@@ -93,15 +93,17 @@ body {
 }
 
 .card-portfolio {
-  background-size: 101%;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: top center;
-  transition: 6s ease-out;
+  transition: 1s ease-out;
   transform: perspective(900px) rotateX(6deg);
+  box-shadow: 0 15px 30px #00000040;
   &:hover {
     background-position: bottom center;
-    transition: 20s ease-out;
+    transition: 2s ease-out;
     transform: perspective(1000px) rotateX(0);
+    box-shadow: 0 3px 5px #00000040;
   }
 }
 
