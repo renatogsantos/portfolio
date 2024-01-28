@@ -76,7 +76,7 @@ export default function JourneyBuilder() {
           duration: 1.2,
           bounce: 0.6,
           type: "spring",
-          delay: 0.1,
+          delay: 0.1
         }}
         className="journey-grid"
         ref={constraintsRef}
@@ -86,12 +86,12 @@ export default function JourneyBuilder() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             whileDrag={{ scale: 1.2 }}
-            //viewport={{ once: true }}
+            viewport={{ once: true }}
             transition={{
               duration: 1.2,
               bounce: 0.4,
               type: "spring",
-              delay: 0.1,
+              delay: 0.1
             }}
             className="flex flex-col lg:col-span-2 p-4 lg:p-0"
             drag={responsive}
@@ -99,8 +99,11 @@ export default function JourneyBuilder() {
           >
             <div>
               <h2 className="text-3xl lg:text-4xl font-bold text-main-700 dark:text-white">
-                Sua <span className="text-main-100">Jornada Digital</span> de
-                Sucesso!
+                Sua{" "}
+                <span className="text-main-100">
+                  Jornada Digital
+                </span>{" "}
+                de Sucesso!
               </h2>
               <p className="text-sm font-medium mt-3">
                 Explore conosco nosso processo para construir o site dos seus
@@ -118,15 +121,15 @@ export default function JourneyBuilder() {
           </motion.div>
           {processoConstrucaoSite.map(({ titulo, descricao, razao }, i) => (
             <motion.div
-              initial={{ scale: 0, opacity: 0 }}
-              whileInView={{ scale: 1, opacity: 1 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               whileDrag={{ scale: 1.2 }}
-              //viewport={{ once: true }}
+              viewport={{ once: true }}
               transition={{
                 duration: 1.2,
                 bounce: 0.4,
                 type: "spring",
-                delay: 0.1,
+                delay: 0.1
               }}
               key={i}
               className="journey-item dark:bg-main-700 bg-white shadow-3xl dark:shadow-2xl p-6 flex flex-col gap-2"
@@ -154,12 +157,12 @@ export default function JourneyBuilder() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             whileDrag={{ scale: 1.2 }}
-            //viewport={{ once: true }}
+            viewport={{ once: true }}
             transition={{
               duration: 1.2,
               bounce: 0.4,
               type: "spring",
-              delay: 0.1,
+              delay: 0.1
             }}
             className="flex flex-col lg:col-span-2 p-4 lg:p-0"
             drag={responsive}
