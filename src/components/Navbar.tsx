@@ -32,31 +32,10 @@ export default function MainNavbar() {
     <>
       <Navbar onMenuOpenChange={setIsMenuOpen} isBordered maxWidth="2xl">
         <NavbarContent>
-          <NavbarMenuToggle
-            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-            className="sm:hidden"
-          />
           <NavbarBrand>
-            <div className="flex items-center gap-2">
-              <Avatar
-                isBordered
-                color="success"
-                src="https://github.com/renatogsantos.png"
-              />
-              <div className="flex flex-col gap-1">
-                <span className="text-small font-bold m-0 p-0 leading-none">
-                  Renato G Santos
-                </span>
-                <Link
-                  href="https://www.linkedin.com/in/renato-g-santos/"
-                  aria-label="Perfil Linkedin"
-                  target="_blank"
-                  className="text-[12px] font-medium m-0 p-0 leading-none text-main-700 dark:text-white"
-                >
-                  <LinkedinLogo size={16} weight="duotone" /> Perfil Linkedin
-                </Link>
-              </div>
-            </div>
+            <span className="text-2xl font-extrabold">
+              Studio<span className="text-main-100">Digital</span>
+            </span>
           </NavbarBrand>
         </NavbarContent>
 
@@ -113,6 +92,12 @@ export default function MainNavbar() {
             <MainSwitch />
           </NavbarItem>
         </NavbarContent>
+
+        <NavbarMenuToggle
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          className="sm:hidden"
+        />
+
         <NavbarMenu>
           <NavbarMenuItem>
             <Link

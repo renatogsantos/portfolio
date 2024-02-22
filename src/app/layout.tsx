@@ -5,6 +5,7 @@ import "./globals.css";
 import { Providers } from "./providers";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import MainNavbar from "@/components/Navbar";
+import ButtonFloat from "@/components/ButtonFloat";
 
 const fontFamily = Montserrat({ subsets: ["latin"] });
 
@@ -49,6 +50,7 @@ export default function RootLayout({
           </div>
           <MainNavbar />
           {children}
+          <ButtonFloat />
         </Providers>
         <SpeedInsights />
       </body>
