@@ -231,18 +231,28 @@ export default function HeroTwo() {
             className="lg:w-full p-6 flex flex-col gap-4"
           >
             <CardPortfolio
+              ready={false}
+              image="/mocks/vertex-form.png"
+              title="Vertex Formuladora"
+              description="A Vertex Formulação e Armazenagem, oferece pra você e sua empresa, qualidade, transparência e segurança através de tecnologia de ponta e colaboradores extremamente qualificados na sua planta produtiva e terminal de armazenagem, proporcionando soluções energéticas de alta qualidade e sustentáveis"
+              link="https://vertex-formuladora.vercel.app/"
+            />
+            <CardPortfolio
+              ready={true}
               image="/mocks/lithiumbr-mockup.png"
               title="Lithium BR"
               description="LithiumBR: A principal loja online para produtos Apple! Descubra a excelência em tecnologia com a garantia de qualidade e estilo."
               link="https://www.lithiumbr.com/"
             />
             <CardPortfolio
+              ready={true}
               image="/mocks/rayx-mockup.png"
               title="Rayx Comercial"
               description="Empresa do ramo de acessórios automotivos. Temos os melhores vendedores da área especializados e comprometidos com o serviço. A nossa empresa está preparada para atender clientes de médio e grande porte, oferecendo sempre uma solução inteligente e prática para o atendimento."
               link="https://www.rayx.com.br/"
             />
             <CardPortfolio
+              ready={true}
               image="/mocks/pokedexplore-mockup.png"
               title="PokédExplore"
               description="Um espaço online dedicado aos verdadeiros aficionados por Pokémon que desejam ampliar suas coleções capturando novos exemplares."
