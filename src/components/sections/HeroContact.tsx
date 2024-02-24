@@ -1,26 +1,16 @@
 "use client";
-import {
-  Input,
-  Link,
-  Select,
-  SelectItem,
-  Textarea,
-  Tooltip,
-} from "@nextui-org/react";
-import { SubmitHandler, useForm } from "react-hook-form";
-import MainButton from "../Button";
+import { Link, Tooltip } from "@nextui-org/react";
 import { motion } from "framer-motion";
 import ParallaxText from "../ParallaxText";
 import {
   GithubLogo,
   LinkedinLogo,
-  PaperPlaneTilt,
   RocketLaunch,
   WhatsappLogo,
 } from "@phosphor-icons/react";
 import ContactForm from "../ContactForm";
 
-export default function HeroFour() {
+export default function HeroContact() {
   return (
     <>
       <motion.div
@@ -32,7 +22,7 @@ export default function HeroFour() {
           duration: 1.2,
           bounce: 0.6,
           type: "spring",
-          delay: 0.1
+          delay: 0.1,
         }}
       >
         <ParallaxText baseVelocity={1}>ENTRE EM</ParallaxText>
@@ -47,11 +37,11 @@ export default function HeroFour() {
           duration: 1.2,
           bounce: 0.6,
           type: "spring",
-          delay: 0.1
+          delay: 0.1,
         }}
-          className="container mx-auto p-4 lg:mt-12"
+        className="container mx-auto p-4 lg:mt-12"
       >
-        <div className="container mx-auto rounded-3xl dark:bg-main-700 bg-white mb-4 shadow-3xl dark:shadow-2xl p-12">
+        <div className="container mx-auto py-12">
           <div className="grid lg:grid-cols-2 gap-4">
             <motion.div
               initial={{ opacity: 0, y: 50 }}
@@ -62,8 +52,7 @@ export default function HeroFour() {
                 duration: 1.2,
                 bounce: 0.6,
                 type: "spring",
-                delay: 0.1
-                
+                delay: 0.1,
               }}
               className="flex flex-col gap-6"
             >
@@ -148,7 +137,7 @@ export default function HeroFour() {
                 duration: 1.2,
                 bounce: 0.6,
                 type: "spring",
-                delay: 0.1
+                delay: 0.1,
               }}
             >
               <ContactForm />

@@ -16,7 +16,7 @@ import ParallaxText from "../ParallaxText";
 import { Button, Tooltip } from "@nextui-org/react";
 import CardText from "../CardText";
 
-export default function HeroOne() {
+export default function HeroPresence() {
   return (
     <>
       <motion.div

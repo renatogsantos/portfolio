@@ -13,7 +13,7 @@ const CardPortfolio = dynamic(() => import("../CardPortfolio"), {
   ),
 });
 
-export default function HeroTwo() {
+export default function HeroShowcase() {
   const [comment, setComment] = useState(1);
 
   return (

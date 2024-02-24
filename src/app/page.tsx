@@ -1,9 +1,9 @@
-import HeroFour from "@/components/sections/HeroFour";
-import HeroOne from "@/components/sections/HeroOne";
-import HeroThree from "@/components/sections/HeroThree";
-import HeroTwo from "@/components/sections/HeroTwo";
 import HomeSection from "@/components/sections/HomeSection";
+import HeroPresence from "@/components/sections/HeroPresence";
+import HeroAbout from "@/components/sections/HeroAbout";
+import HeroShowcase from "@/components/sections/HeroShowcase";
 import JourneyBuilder from "@/components/sections/JourneyBuilder";
+import HeroContact from "@/components/sections/HeroContact";
 
 export default function Home() {
   return (
@@ -13,19 +13,19 @@ export default function Home() {
           <HomeSection />
         </section>
         <section id="presenca">
-          <HeroOne />
+          <HeroPresence />
         </section>
         <section id="sobre">
-          <HeroThree />
+          <HeroAbout />
         </section>
         <section id="showcase">
-          <HeroTwo />
+          <HeroShowcase />
         </section>
         <section id="jornada">
           <JourneyBuilder />
         </section>
         <section id="contato">
-          <HeroFour />
+          <HeroContact />
         </section>
       </main>
     </>

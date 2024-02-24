@@ -13,7 +13,7 @@ const CardPortfolio = dynamic(() => import("../CardPortfolio"), {
   ),
 });
 
-export default function HeroThree() {
+export default function HeroAbout() {
   return (
     <>
       <motion.div
