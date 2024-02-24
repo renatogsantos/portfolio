@@ -4,6 +4,7 @@ import HeroAbout from "@/components/sections/HeroAbout";
 import HeroShowcase from "@/components/sections/HeroShowcase";
 import JourneyBuilder from "@/components/sections/JourneyBuilder";
 import HeroContact from "@/components/sections/HeroContact";
+import HeroPrices from "@/components/sections/HeroPrices";
 
 export default function Home() {
   return (
@@ -23,6 +24,9 @@ export default function Home() {
         </section>
         <section id="jornada">
           <JourneyBuilder />
+        </section>
+        <section id="prices" className="hidden">
+          <HeroPrices />
         </section>
         <section id="contato">
           <HeroContact />

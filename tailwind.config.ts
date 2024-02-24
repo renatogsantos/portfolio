@@ -14,9 +14,11 @@ const config: any = {
       colors: {
         white: "#f9fcff",
         black: "#13161F",
+        gray: "#5e6066",
         danger: "#f02d3a",
         focus: "#FA00FF",
         main: {
+          50: "#70e000",
           100: "#ff3600",
           200: "#FD1A5E",
           300: "#FA00FF",

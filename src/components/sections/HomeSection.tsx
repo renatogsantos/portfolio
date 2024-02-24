@@ -60,6 +60,7 @@ export default function HomeSection() {
           </p>
           <MainButton
             icon={null}
+            size={false}
             typeButton="button"
             title="Entre em contato"
             onClick={onOpen}

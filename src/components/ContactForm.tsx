@@ -129,6 +129,7 @@ export default function ContactForm() {
           />
           <MainButton
             icon={<PaperPlaneTilt size={24} weight="duotone" />}
+            size={false}
             typeButton="submit"
             title="Enviar Mensagem"
             onClick={() => {}}
