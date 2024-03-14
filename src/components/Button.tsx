@@ -9,7 +9,7 @@ type buttonData = {
   typeButton: "button" | "submit" | "reset";
   icon: any;
   size: boolean;
-  link: string;
+  link?: string;
 };
 
 export default function MainButton({
