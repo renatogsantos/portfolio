@@ -8,9 +8,16 @@ import { motion } from "framer-motion";
 export default function PricesCard({ plan }: { plan: Plans }) {
   return (
     <motion.div
-      initial={{ scale: 0 }}
-      whileInView={{ scale: 1 }}
-      transition={{ douration: 1, type: "spring", bounce: 0.3 }}
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 50 }}
+      viewport={{ once: true }}
+      transition={{
+        duration: 1.2,
+        bounce: 0.6,
+        type: "spring",
+        delay: 0.1,
+      }}
       key={plan.id}
       className="bg-white hover:bg-light dark:bg-main-700 hover:dark:bg-main-800 rounded-2xl p-6 shadow-3xl dark:shadow-2xl cursor-pointer text-main-700 dark:text-white hover:outline outline-3 outline-main-300"
     >
