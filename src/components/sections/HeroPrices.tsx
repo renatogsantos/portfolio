@@ -48,8 +48,10 @@ export default function HeroPrices() {
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-12">
-          {planPrices.map((plan: any) => (
-            <PricesCard plan={plan} />
+          {planPrices.map((plan: any, i) => (
+            <div key={i}>
+              <PricesCard plan={plan} />
+            </div>
           ))}
         </div>
       </div>
