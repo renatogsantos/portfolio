@@ -79,6 +79,14 @@ export default function MainNavbar() {
           </NavbarItem>
           <NavbarItem>
             <a
+              href="#planos"
+              className="font-medium text-main-700 dark:text-white"
+            >
+              Planos
+            </a>
+          </NavbarItem>
+          <NavbarItem>
+            <a
               href="#contato"
               className="font-medium text-main-700 dark:text-white"
             >

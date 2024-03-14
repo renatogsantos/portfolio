@@ -25,7 +25,7 @@ export default function Home() {
         <section id="jornada">
           <JourneyBuilder />
         </section>
-        <section id="prices" className="hidden">
+        <section id="planos" className="">
           <HeroPrices />
         </section>
         <section id="contato">
