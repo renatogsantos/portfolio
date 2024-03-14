@@ -46,6 +46,7 @@ export default function PricesCard({ plan }: { plan: Plans }) {
         <MainButton
           icon={false}
           size={true}
+          link={`https://api.whatsapp.com/send?phone=5511911882402&text=Ol%C3%A1%20Renato,%20Gostaria%20de%20obter%20o%20${plan.title}`}
           typeButton="submit"
           title="Obter Plano"
           onClick={() => {}}
