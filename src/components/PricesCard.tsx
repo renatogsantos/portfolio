@@ -25,17 +25,17 @@ export default function PricesCard({ plan }: { plan: Plans }) {
         <span className="text-2xl font-bold">{plan.title}</span>
         <div className="flex flex-col lg:flex-row items-center justify-between gap-1">
           <div className="flex lg:flex-col items-center gap-1 lg:gap-0">
-            <span className="text-[9px] font-bold text-gray">Orçamento</span>
-            <span className="text-[9px] font-bold text-gray">Em até 2x de</span>
+            <span className="text-[10px] font-bold text-gray">Orçamento</span>
+            <span className="text-[12px] font-bold text-gray">Até 2x de</span>
           </div>
           <span className="text-5xl font-extrabold ">
             {formatarParaBRL(plan.price / 2)}
           </span>
           <div className="flex lg:flex-col items-center gap-1 lg:gap-0">
-            <span className="text-[9px] font-bold text-gray">
+            <span className="text-[10px] font-bold text-gray">
               Valor total de
             </span>
-            <span className="text-[9px] font-bold text-gray">
+            <span className="text-[12px] font-bold text-gray">
               {formatarParaBRL(plan.price)}
             </span>
           </div>
